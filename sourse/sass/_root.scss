@@ -1,0 +1,53 @@
+:root {
+  --animate-delay: 1.2s;
+  --fontSizeBase: 14px;
+  @include media-breakpoint-up(md){
+    --fontSizeBase: #{$em-base};
+  }
+  --sPT: #{rem(45)};
+  --sPB: #{rem(50)};
+  --sTPB: #{rem(35)};
+
+
+  --swiperArrowSize: #{rem(68)};
+  --swiperArrowPosition: calc(-1 * var(--swiperArrowSize)  * .5);
+  --swiperBorderColorDef: var(--bs-primary);
+  --swiperColorDef: var(--bs-primary);
+  --swiperBgDef: #ffffff;
+
+  --swiperBorderColorDefHover: var(--bs-primary);
+  --swiperColorDefHover: var(--bs-primary);
+  --swiperBgDefHover: #ffffff;
+
+
+  --fancybox-bg: rgba(24, 24, 27, .77);
+
+
+  --carousel-button-width: 48px;
+  --carousel-button-height: 48px;
+
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+
+  --carousel-button-svg-stroke-width: 2.5;
+  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+
+	//-
+  @include media-breakpoint-up(xl){
+    --location-col-mw: 180px;
+  }
+	@include media-breakpoint-up(xxl){
+		--location-col-mw: 206px;
+	}
+
+  --fixed-foot-nav-h: 70px;
+  --header-height: 205px;
+  --header-real-height: 205px;
+
+  //-
+  --l-shift-x: 0px;
+  @include media-breakpoint-up(xxl){
+    --l-shift-x: 50px;
+  }
+
+}

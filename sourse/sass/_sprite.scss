@@ -1,0 +1,245 @@
+@use "sass:math";
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.icon-alert {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-arrow-clockwise {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-arrow-down {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-arrow-r {
+	font-size:math.div(10,10)*1rem;
+	width: math.div(14,10)*1em;
+}
+.icon-bill {
+	font-size:math.div(64,10)*1rem;
+	width: math.div(64,64)*1em;
+}
+.icon-btnLike {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-calendar-filled {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-call {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-chart {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-check {
+	font-size:math.div(17,10)*1rem;
+	width: math.div(17,17)*1em;
+}
+.icon-chevron-bot {
+	font-size:math.div(9,10)*1rem;
+	width: math.div(15,9)*1em;
+}
+.icon-chevron-down {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(13,8)*1em;
+}
+.icon-chevron-left {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(5,8)*1em;
+}
+.icon-chevron-right {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(6,8)*1em;
+}
+.icon-chevron-right-lg {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-chevron-top {
+	font-size:math.div(9,10)*1rem;
+	width: math.div(15,9)*1em;
+}
+.icon-clock {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-community {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-contact-info-arrow {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(30,8)*1em;
+}
+.icon-credit-card-fill {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-cross {
+	font-size:math.div(8,10)*1rem;
+	width: math.div(8,8)*1em;
+}
+.icon-disLike {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-dots {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-down-scroll {
+	font-size:math.div(56,10)*1rem;
+	width: math.div(56,56)*1em;
+}
+.icon-download {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(25,24)*1em;
+}
+.icon-drop-arrow {
+	font-size:math.div(32,10)*1rem;
+	width: math.div(32,32)*1em;
+}
+.icon-email {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-fb {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-growth {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-icon-dolyamy {
+	font-size:math.div(40,10)*1rem;
+	width: math.div(49,40)*1em;
+}
+.icon-icon-news {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-icon-question {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-income-call {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-info {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-inst {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-like {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-location {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(14,16)*1em;
+}
+.icon-marker {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-padlock {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-park-solid-bill {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-parking {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-pay-1 {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(22,16)*1em;
+}
+.icon-pay-2 {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-pay-icon {
+	font-size:math.div(32,10)*1rem;
+	width: math.div(32,32)*1em;
+}
+.icon-phone {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-plus {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-privilege {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-recycle {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-service {
+	font-size:math.div(24,10)*1rem;
+	width: math.div(24,24)*1em;
+}
+.icon-sort-1 {
+	font-size:math.div(18,10)*1rem;
+	width: math.div(19,18)*1em;
+}
+.icon-sort-2 {
+	font-size:math.div(18,10)*1rem;
+	width: math.div(18,18)*1em;
+}
+.icon-sort-order {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(16,16)*1em;
+}
+.icon-star {
+	font-size:math.div(16,10)*1rem;
+	width: math.div(17,16)*1em;
+}
+.icon-telegram {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-tool {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-tool-2 {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-wallet {
+	font-size:math.div(36,10)*1rem;
+	width: math.div(36,36)*1em;
+}
+.icon-whatsapp {
+	font-size:math.div(48,10)*1rem;
+	width: math.div(48,48)*1em;
+}
+.icon-zoom {
+	font-size:math.div(25,10)*1rem;
+	width: math.div(25,25)*1em;
+}
