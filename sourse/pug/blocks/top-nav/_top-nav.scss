@@ -9,7 +9,7 @@
 	@include media-breakpoint-up(xxl){
 		padding: rem(25) 0 rem(27);
 	}
-	background: $gray-900;
+	background-color: $gray-830;
 	position: relative;
 	z-index: 10;
 
@@ -39,7 +39,7 @@
 			width: rem(150);
 		}
 		@include media-breakpoint-up(lg){
-			width: rem(173);
+			width: rem(210);
 		}
 
 
@@ -57,21 +57,21 @@
 		font-size: rem(19);
 		line-height: calc(30/19);
 
-		color: $primary;
+		color: $warning;
 		&:hover{
 			color: $white;
 		}
 	}
 	&__order-call{
-		font-size: rem(17);
-		line-height: calc(25/17);
+		font-size: rem(16);
+		line-height: calc(25/16);
 
-		color: $white;
+		color: $gray-110;
 		text-decoration: none;
 	}
 	&__log{
-		font-size: rem(19);
-		line-height: calc(28/19);
+		font-size: rem(16);
+		line-height: calc(28/16);
 		color: $white;
 
 		text-decoration: none;
@@ -176,8 +176,9 @@
 	text-transform: uppercase;
 
 	padding: rem(10);
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 	@include media-breakpoint-up(lg){
-		padding: 13px 18px;
+		padding: 12px 19px;
 	}
 
 	@include media-breakpoint-down(lg){
@@ -217,10 +218,10 @@
 
 	}
 	&__input{
-		background-color: $gray-910!important;
-		border-color: $gray-910!important;
-		color: $white!important;
-		font-weight: 500;
+		background-color: $white!important;
+		border-color: $white!important;
+		color: $gray-900!important;
+		font-weight: 400;
 		box-shadow: none!important;
 
 		padding-top: 13px;
@@ -235,8 +236,8 @@
 		box-shadow: none!important;
 
 		@include mt();
-		width: rem(25);
-		height: rem(25);
+		width: rem(24);
+		height: rem(24);
 		&:hover{
 			transform: translateY(-50%) scale(1.2);
 		}
@@ -267,7 +268,7 @@
 
 		// margin-right: 25px;
 	}
-	background: $gray-900;
+	background-color: $gray-830;
 	padding: 3px 0 rem(15);
 	@include media-breakpoint-up(xl){
 		padding: 3px 0 rem(27);
@@ -319,9 +320,9 @@
 		// display: block;
 		display: inline-block;
 		text-decoration: none;
-		font-size: rem(17);
-		line-height: calc(27/17);
-		color: $gray-580;
+		font-size: rem(16);
+		line-height: calc(28/16);
+		color: $gray-110;
 	}
 
 	&__arrow-col{
@@ -340,7 +341,7 @@
 		.icon{
 			@include mt();
 			font-size: rem(10);
-			stroke: $primary;
+			stroke: $gray-511;
 			color: transparent;
 		}
 		&:hover{
@@ -364,7 +365,7 @@
 		line-height: calc(27/17);
 		text-decoration: none;
 
-		color: $primary;
+		color: $gray-110;
 		&:hover{
 			color: $white;
 		}
@@ -375,7 +376,7 @@
 
 .topNavItems{
 	&__row{
-		--bs-gutter-x: #{rem(33)};
+		--bs-gutter-x: #{rem(15)};
 		--bs-gutter-y: #{rem(10)};
 	}
 	&__item{
@@ -383,9 +384,10 @@
 		align-items: center;
 		justify-content: center;
 
-		width: rem(26);
-		height: rem(26);
+		width: rem(32);
+		height: rem(32);
 
+		position: relative;
 		//.icon{
 		//	font-size: rem(20);
 		//	color: $white;
@@ -398,7 +400,16 @@
 			max-height: 100%;
 		}
 	}
-
+	&__cart-circle {
+		position: absolute;
+		width: rem(16);
+		height: rem(16);
+		border-radius: 50%;
+		background-color: $warning;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		top: -3px;
+		right: -3px;
+	}
 }
 .fixed-nav{
 	position: fixed;

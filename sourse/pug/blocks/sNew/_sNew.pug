@@ -3,10 +3,9 @@ mixin sNew(data)
 	+b.SECTION.sNew--js.section#sNew&attributes(attributes)
 		.container
 			+e.top-row.row.align-items-center
-				.col-xl-3.d-none.d-xl-block
 				.col-md
-					+b.section-title.text-xl-center
-						h2 Новинки бытовой техники
+					+b.section-title
+						h2 Новинки
 				.col-md-auto.col-xl-3.text-xl-end.pe-xl-1
 					+e.all-link(href='#') Смотреть все
 			+e.slider-wrap
@@ -26,26 +25,20 @@ mixin sNew(data)
 				.d-none.d-md-block
 					+arrow2()
 			+e.baners-row.row
-				.col-xl-7
+				.col-xl-6
 					+e.baner(href="#")
 						+e.b-img
 							img(loading="lazy" src="img/@2x/sNew-baner-1.png" alt="")
 						+e.content
-							+e.b-title Покупай в кредит
-							+e.c-descr технику для малого бизнеса
-							+e.btn Узнать подробнее
-				.col-xl-5
+							+e.b-title Скидки до #[span 10%]<br>на бытовую технику
+							+e.btn подробнее
+				.col-xl-6
 					+e.baner(href="#")
 						+e.b-img
 							img(loading="lazy" src="img/@2x/sNew-baner-2.png" alt="")
-						+e.txt-box.text-end
-							+e.title
-								span.text-primary -15%
-								|
-								| на все чайники Morphy richards
-							+e.price-box
-								+e.price--old 8 990 руб.
-								+e.price--new 6 990 руб.
+						+e.content
+							+e.b-title Новые модели бензопил со<br>#[span скидкой]
+							+e.btn подробнее
 			//
 	// end sNew
 

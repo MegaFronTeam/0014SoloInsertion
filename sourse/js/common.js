@@ -540,7 +540,7 @@ function eventHandler() {
   let sNewNext = document.querySelector('.sNew--js .swiper-next, .sBuyWith--js .swiper-next');
   let sNewSlider = new Swiper('.sNew-slider-js', {
     slidesPerView: 'auto',
-    spaceBetween: 0,
+    spaceBetween: 29,
     loop: true,
     navigation: {
       nextEl: sNewNext,

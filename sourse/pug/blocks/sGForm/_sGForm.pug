@@ -8,26 +8,30 @@ mixin sGForm(data)
 						+b.section-title
 							h2 Профессиональные менеджеры
 							p Получите персональную консультацию по выбору техники, доставке, оплате
-					+e.form-col.col-xl-6
+					+e.form-col.col-xl-7
 						+form-wrap()
 							+e.f-row.row
 								.col-md
 									+input('Телефон', 'tel')
 								.col-md-auto
-									+e.btn(type="submit") Заказать
+									+e.btn(type="submit") Отправить
 							+e.policy
-								| Нажимая кнопку "Заказать" я соглашаюсь с
+								| Нажимая кнопку "Отправить" я соглашаюсь с
 								|
 								a(href="#") Положением о персональных данных и конфиденциальности.
 			+e.b-row.row
-				.col-lg-4
-					+sGFormBaner(1,'ГАРАНТИЯ НА ТЕХНИКУ SMEG 3 ГОДА')
-				.col-lg-8
-					+sGFormBaner(2,'СКИДКИ НОВОСЕЛАМ')
+				.col-lg-6
+					+e.baner
+						+e.b-bg
+							img(loading="lazy" src=`img/@2x/sNew-baner-1.png` alt="")
+						+e.content
+							+e.txt Скидки до #[span 10%]<br>на бытовую технику
+							+e.btn подробнее
+				.col-lg-6
+					+e.baner
+						+e.b-bg
+							img(loading="lazy" src=`img/@2x/sNew-baner-2.png` alt="")
+						+e.content
+							+e.txt Новые модели бензопил со #[span скидкой]
+							+e.btn подробнее
 	// end sGForm
-
-mixin sGFormBaner(imgNum,txt)
-	+e.baner
-		+e.b-bg
-			img(loading="lazy" src=`img/@2x/sGForm-baner-${imgNum}.jpg` alt="")
-		+e.txt=txt

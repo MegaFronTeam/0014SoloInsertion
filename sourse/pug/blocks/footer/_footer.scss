@@ -3,6 +3,7 @@
 	padding: rem(52) 0 calc(var(--fixed-foot-nav-h) + 38px);
 	position: relative;
 	z-index: 1;
+	background-color: $gray-830;
 	&__bg{
 		background-color: darken($gray-900, 4);
 		position: absolute;

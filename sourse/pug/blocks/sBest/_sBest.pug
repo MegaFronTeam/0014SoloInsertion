@@ -1,13 +1,11 @@
 mixin sBest(data)
 	// start sBest
 	+b.SECTION.sBest.section#sBest&attributes(attributes)
-		+img("img/@2x/sAbout-bg.png", 'bg').picture-bg
+		//- +img("img/@2x/sAbout-bg.png", 'bg').picture-bg
 		.container
-			+b.section-title.text-center
-				h2
-					| Лучшая бытовая
-					br
-					| техника для кухни
+			+b.section-title
+				h2 Скидки
+				p Более 20 000 разновидностей товаров для комфорта в вашем доме
 			+e.box
 				+e.row.row
 					.col-xl
@@ -18,10 +16,16 @@ mixin sBest(data)
 							+sBestItem()
 							+sBestItem()
 							+sBestItem()
-					+e.big-item-col.col-xl-5
-						+sNewProdItem('big-item', '-big2')
+							+sBestItem()
+							+sBestItem()
+							+sBestItem()
+							+sBestItem()
+							+sBestItem()
+							+sBestItem()
+					//- +e.big-item-col.col-xl-5
+					//- 	+sNewProdItem('big-item', '-big2')
 	// end sBest
 
 mixin sBestItem()
-	.col-sm-6.col-lg-4
+	.col-sm-6.col-lg-3
 		+sNewProdItem()

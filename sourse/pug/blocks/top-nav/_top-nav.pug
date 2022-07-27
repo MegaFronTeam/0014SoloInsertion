@@ -72,6 +72,7 @@ mixin topNavItem(iconName)
 		+e.item(href="#")
 			img(loading="lazy" src=`img/svg/${iconName}.svg` alt="")
 			//-+icon()
+			block
 
 mixin brands()
 	+b.brands--js
@@ -108,6 +109,7 @@ mixin topNavItems()
 			+topNavItem('bars')
 			+topNavItem('like')
 			+topNavItem('cart')
+				+e.cart-circle
 
 mixin footMobNav()
 	+b.fixed-nav--js.d-md-none

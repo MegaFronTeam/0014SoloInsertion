@@ -6,26 +6,68 @@
 
 	position: relative;
 	z-index: 1;
-	&__bg{
+	&::before {
+		content: '';
+		display: block;
 		position: absolute;
 		z-index: -1;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: rem(417);
-
-		img{
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+		height: rem(491);
+		background-color: $gray-110;
 	}
 	.section-title{
-		color: $white;
+		color: $body-color;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		position: relative;
+		padding-bottom: 0;
+		z-index: 1;
+		margin-bottom: rem(38);
+		&::after {
+			@include media-breakpoint-up(lg) {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: #D6D6D6;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				z-index: -1;
+			}
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: rem(17);
+			height: rem(17);
+			background-image: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+			transform: translateY(-50%) rotate(-45deg);
+			top: 50%;
+			left: rem(-32);
+			border-radius: 2px;
+		}
 		h2{
-			color: $white;
-			font-weight: 700;
-			font-size: rem(36);
+			font-weight: 600;
+			margin-bottom: 0;
+			background-color: $gray-110;
+			@include media-breakpoint-up(lg) {
+				padding-right: rem(25);
+			}
+		}
+		p {
+			color: $gray-511;
+			margin-bottom: 0;
+			background-color: $gray-110;
+			@include media-breakpoint-up(lg) {
+				padding-left: rem(25);
+			}
 		}
 	}
 	&__box{
@@ -37,8 +79,8 @@
 		@include media-breakpoint-up(xl){}
 	}
 	&__sub-row{
-		--bs-gutter-x: 0;
-		--bs-gutter-y: 0;
+		--bs-gutter-x: #{rem(30)};
+		--bs-gutter-y: #{rem(30)};
 	}
 	//
 	&__big-item-col{

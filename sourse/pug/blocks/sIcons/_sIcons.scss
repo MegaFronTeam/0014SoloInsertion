@@ -11,8 +11,18 @@
 		}
 	}
 	&__row-wrap{
+		padding-top: rem(35);
+		padding-bottom: rem(35);
+		padding-right: rem(50);
+		padding-left: rem(50);
+		background-color: $gray-110;
+		border-radius: 10px;
 		@include media-breakpoint-up(xxl){
 			margin: 0 -10px 0 -35px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(70);
+			padding-bottom: rem(70);
 		}
 	}
 	&__row{
@@ -25,30 +35,47 @@
 		}
 	}
 	&__col{
-		@include media-breakpoint-up(xl){
-			width: calc(100%/7);
-		}
+		// @include media-breakpoint-up(xl){
+		// 	width: calc(100%/7);
+		// }
 	}
 	&__item{
 
 	}
 	&__img{
-		height: rem(55);
-		padding-bottom: rem(10);
+		// height: rem(55);
+		margin-bottom: rem(25);
 
 		display: flex;
 		align-items: flex-start;
 		justify-content: center;
 
+		position: relative;
+		display: block;
+		width: 100px;
+		height: 100px;
+		background-color: #fff;
+		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		transform: rotate(45deg);
+		margin-right: auto;
+    margin-left: auto;
+		
 		img{
+			@include a-cent;
+			position: absolute;
 			width: auto;
 			height: auto;
 			max-width: 100%;
 			max-height: 100%;
+			width: rem(70);
+			height: rem(70);
+			transform: rotate(-45deg);
 		}
 	}
 	&__txt{
-		font-size: rem(20);
+		font-size: rem(16);
+		font-weight: 600;
 		line-height: 1.3;
 	}
 	&__gray{
