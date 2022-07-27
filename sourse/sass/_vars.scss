@@ -25,8 +25,8 @@ $font-family-sans-serif: $default-font, system-ui, -apple-system, "Segoe UI", Ro
 // scss-docs-start gray-color-variables
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-110: #ECECEC;
-$gray-115: #E2E2E2;
+$gray-110: #F4F4F4;
+$gray-115: #DCDCDC;
 $gray-120: #F3F3F3;
 $gray-125: #F6F6F6;
 $gray-130: #F7F7F7;
@@ -90,10 +90,10 @@ $blue: #0d6efd !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
-$red: #dc3545 !default;
+$red: #F45C5C !default;
 $orange: #FF8651;
-$yellow: #ffc107 !default;
-$green: #198754 !default;
+$yellow: #FFC701 !default;
+$green: #4C9900 !default;
 $green2: #8AC44B;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
@@ -349,9 +349,9 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $orange;
+$primary: $green;
 $secondary: $gray-600 !default;
-$success: $green !default;
+$success: $orange !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -450,8 +450,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color: #3F3F3F;
+$body-bg:                   #444444 !default;
+$body-color: #5A5A5A;
 $body-text-align:           null !default;
 
 // Links
@@ -616,11 +616,11 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size: rem(36);
-$h2-font-size: rem(26);
-$h3-font-size: rem(20);
+$h1-font-size: rem(56);
+$h2-font-size: rem(32);
+$h3-font-size: rem(26);
 $h4-font-size: rem(20);
-$h5-font-size: rem(16);
+$h5-font-size: rem(18);
 $h6-font-size: rem(16);
 // scss-docs-end font-variables
 
@@ -637,9 +637,9 @@ $font-sizes: (
 
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
+$headings-font-family:        'Raleway' !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        400 !default;
+$headings-font-weight:        600 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              #131313;
 // scss-docs-end headings-variables
@@ -823,7 +823,7 @@ $btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           rem(10) !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
 

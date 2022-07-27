@@ -52,24 +52,25 @@
 	&__btn-wrap {
 		display: flex;
     flex-direction: column;
-    max-width: 210px;
+    max-width: 220px;
 	}
 	&__callback-btn{
 		@extend .btn;
 		@extend .btn-primary;
 
-		min-width: rem(210);
-		margin-bottom: rem(32);
+		min-width: rem(220);
+		margin-bottom: rem(20);
 		text-transform: uppercase;
-		padding: 5px 10px;
-		font-size: rem(14);
+		padding: var(--bs-btn-padding-x) var(--bs-btn-padding-y);
+		font-size: rem(16);
+		font-weight: 700;
 	}
 	&__registartion-btn {
 		@extend .btn;
 		@include mt;
 		text-transform: uppercase;
 		font-size: rem(14);
-		padding: 5px rem(20);
+		padding: var(--bs-btn-padding-x) var(--bs-btn-padding-y);
 		border: 1px solid #9B9B9B;
 		color: $white;
 		margin-bottom: rem(17);
