@@ -8,9 +8,13 @@ mixin footer()
           +e.col-wrap
             a(href="#")
               img(src='img/svg/logo.svg')
+            p Интернет магазин &laquo;Встройка-Соло&raquo;, &copy;&nbsp;2009-2022.
+            p Сайт носит информационный характер и&nbsp;не&nbsp;является публичной офертой, определяемой положениями ч.2&nbsp;ст.&nbsp;437&nbsp;ГК РФ.
+            p Внешний вид, цвет и&nbsp;характеристики товаров указаны ориентировочно, могут не&nbsp;совпадать с&nbsp;обновленными моделями&nbsp;&mdash; уточняйте информацию у&nbsp;менеджеров при заказе.
+            p Цены и&nbsp;условия доставки действительны до&nbsp;31.05.2022 07:47.
         .col
-          .row
-            .col-sm-4.col-lg.col-xxl-4
+          +e.menu-row.row
+            .col-sm-4.col-lg.col-xxl-auto
               +footerDDItem('Интернет-магазин')
                 li: a(href='#') Доставка и оплата
                 li: a(href='#') Акции
@@ -19,14 +23,14 @@ mixin footer()
                 li: a(href='#') Гарантия
                 li: a(href='#') Статьи
                 li: a(href='#') Карта сайта
-            .col-sm-4.col-lg.col-xxl-4
+            .col-sm-4.col-lg.col-xxl-auto
               +footerDDItem('О компании')
                 li: a(href='#') О нас
                 li: a(href='#') Вакансии
                 li: a(href='#') Сотрудничество
                 li: a(href='#') Контакты
                 li: a(href='#') Вход для партнеров
-            +e.creator-col.col-sm-4.col-lg.col-xxl-4
+            +e.creator-col.col-sm-4.col-lg.col-xxl-auto
               +footerDDItem('Каталог')
                 li: a(href='#') Встраиваемая техника
                 li: a(href='#') Крупная бытовая техника
@@ -36,26 +40,48 @@ mixin footer()
               //-   +e.cr-img
               //-     img(laoding="lazy" src='img/svg/creator-logo.svg' alt="")
               //-   +e.cr-txt Разработка сайта
+          +e.contacts-row.row
+            .col-sm-6.col-xl-auto
+              h6 Пункты самовывоза:
+              +e.text(href="tel:+7‍4‍9‍51‍5‍07‍55‍9‍")
+                +icon('phone-solid')
+                | +7‍ (4‍9‍5)‍-1‍5‍0- 7‍5- 5‍9‍
+              +e.text
+                +icon('clock-solid')
+                | пн-пт&nbsp;&mdash; с&nbsp;11:30 до&nbsp;20:00<br>сб-вс&nbsp;&mdash; с&nbsp;11:30 до&nbsp;18:00
+            .col-sm-6.col-xl-auto
+              h6 Отдел доставки:
+              +e.text(href="tel:+7‍4‍9‍91‍1‍0‍7‍34‍7‍")
+                +icon('phone-solid')
+                | +7‍ (4‍9‍9)‍-1‍1‍0‍-7‍3- 4‍7‍
+              +e.text
+                +icon('clock-solid')
+                | ежедневно с&nbsp;10:00 до&nbsp;19:00
+            .col-sm-6.col-xl-auto
+              h6 Обмен возврат:
+              +e.text(href="tel:+74‍9‍55‍4‍0‍4‍6‍5‍4‍‍")
+                +icon('phone-solid')
+                | +7 (4‍9‍5)‍-5‍4‍0‍-4‍6‍-5‍4‍
+              +e.text
+                +icon('clock-solid')
+                | пн-пт с&nbsp;10:00 до&nbsp;17:30<br>сб-вс&nbsp;&mdash; выходные
         .col-lg-auto
           +e.sub-row.row.gy-xl-0
             .col.col-lg-12
               +e.tells
-                +e.tell(href="tel:+78007758272") +7 (800) 775-82-72
-                +e.tell(href="tel:+74957758272") +7 (495) 775-82-72
+                p Консультации по товарам и заказам: #[+e.tell(href="tel:84994952598") 8 499 495 25 98 ] каждый день с 10:00 до 20:00
               +e.btn-wrap
                 +e.callback-btn.link-modal-js(href="#modal-call") Заказать звонок
-                +e.registartion-btn(href="#") регистрация
-              +e.mail-cont
-                +e.mail(href="mailto:shop@kitchenmania.ru") shop@kitchenmania.ru
+                +e.registartion-btn(href="#") Регистрация
             .col-sm-auto.col-lg-12
               +e.soc-row.row
+                +socItem('vk')
                 +socItem('fb')
-                +socItem('inst')
-              +e.white Узнавайте о новинках, акциях и выгодных предложениях первыми
               +e.FORM.mail-form
                 +input('Электронная почта', 'email')
                 +e.btn(type="submit")
                   +icon('arrow-r')
+              +e.white Узнавайте о новинках, акциях и выгодных предложениях первыми
       +e.bot
         +e.all-right © 2020 Китченмания — официальный интернет-магазин бытовой техники. Все права защищены.
         +e.polcy-link(href='#') Политика конфиденциальности

@@ -39,11 +39,11 @@ function browsersync() {
     browserSync.init({
         server: {
             baseDir: './' + publicPath,
-            middleware: bssi({ baseDir: './' + publicPath, ext: '.html' })
+            // middleware: bssi({ baseDir: './' + publicPath, ext: '.html' })
         },
-        ghostMode: { clicks: false },
-        notify: false,
-        online: true,
+        // ghostMode: { clicks: false },
+        // notify: false,
+        // online: true,
         // tunnel: 'layouts', // Attempt to use the URL https://layouts.loca.lt
     })
 }

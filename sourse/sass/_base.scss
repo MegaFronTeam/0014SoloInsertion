@@ -584,8 +584,9 @@ iframe {
 		display: inline-flex;
 		align-items: center;
 		&:after{
-			content: '•';
+			content: '>';
 			margin: 0 4.5px;
+			color: $gray-511;
 			@include media-breakpoint-up(xl){
 				margin: 0 10px;
 			}
@@ -595,16 +596,21 @@ iframe {
 				content: none;
 			}
 		}
-
+		&.active {
+			a {
+				color: $body-color;
+			}
+		}
 
 		a{
 			@include media-breakpoint-down(sm){
 				font-size: 13px;
 			}
+			font-size: rem(14);
 			text-decoration: none;
 			line-height: 1;
 
-			color: $gray-650;
+			color: $gray-511;
 			&:hover{
 				color: $primary;
 			}

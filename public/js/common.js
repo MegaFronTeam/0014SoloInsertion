@@ -475,7 +475,7 @@ function eventHandler() {
 
   let sFamiliarSlider = new Swiper(slider.querySelector('.sFamiliar-slider-js'), { 
 
-    spaceBetween: 0,
+    spaceBetween: 30,
     slidesPerView: 1,
     breakpoints: {
       575: {
