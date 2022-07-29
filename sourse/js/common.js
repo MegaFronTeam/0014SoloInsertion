@@ -545,7 +545,15 @@ function eventHandler() {
     navigation: {
       nextEl: sNewNext,
       prevEl: sNewPrev
-    }
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 4
+      }
+    },
   }); //
 
   let sBrendsPrev = document.querySelector('.sBrends--js .swiper-prev');

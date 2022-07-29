@@ -11,7 +11,7 @@ mixin sAbout(data)
 				.col-md-8.col-lg-9
 					+e.descr
 						p Интернет-магазин #[a(href="#") &laquo;Встройка-Соло&raquo;] начал свою историю в&nbsp;2009&nbsp;году. В&nbsp;то&nbsp;время ассортимент интернет-магазина Встройка-Соло состоял только из&nbsp;крупной и&nbsp;малой бытовой техники, а&nbsp;также садового инвентаря и&nbsp;товаров для дачи. Но&nbsp;наша команда постоянно работала и&nbsp;работает над поиском и&nbsp;введением в&nbsp;ассортимент новых товаров и&nbsp;направлений. Таким образом, в&nbsp;2017-2018, следуя запросам наших покупателей, были открыты направления&nbsp;&mdash; товары для детей, сантехника и&nbsp;фермерское оборудование. В&nbsp;2020&nbsp;&mdash; открыто направление товаров для спорта и&nbsp;отдыха. Теперь мы&nbsp;стали не&nbsp;просто интернет-магазином, а&nbsp;настоящим онлайн-гипермаркетом &laquo;Встройка-Соло&raquo;!
-					+e.message-btn(href="#") написать нам
+					+e.message-btn(href="#") Написать нам
 			+e.slider-wrap
 				.swiper.sAbout-slider-js
 					.swiper-wrapper
@@ -22,14 +22,14 @@ mixin sAbout(data)
 					.swiper-pagination.py-3
 				//-+arrow2()
 			+e.pills-row.row
-				+sAboutPill('#DFD1CC', '#3F3F3F', 2009, 'год основания компании')
-				+sAboutPill('#717171', '#ffffff', '1 200', 'наименований продукции')
-				+sAboutPill('#EEEEEE', '#3F3F3F', 34, 'крупных бренда')
-				+sAboutPill('#ACB9C0', '#3F3F3F', 48, 'подготовленных специалистов')
+				+sAboutPill(2009, 'год основания компании')
+				+sAboutPill('1 200', 'наименований продукции')
+				+sAboutPill(34, 'крупных бренда')
+				+sAboutPill(48, 'подготовленных специалистов')
 	// end sAbout
 
-mixin sAboutPill(bgColor, color, num, txt)
+mixin sAboutPill(num, txt)
 	.col-sm-6.col-lg-3
-		+e.pill(style=`background-color: ${bgColor}; color: ${color}`)
+		+e.pill()
 			+e.num=num
 			+e.p-txt=txt

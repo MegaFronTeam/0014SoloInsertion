@@ -575,6 +575,8 @@ iframe {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 rem(30);
+	position: relative;
+  z-index: 2;
 
 	display: flex;
 	align-items: center;
@@ -585,10 +587,10 @@ iframe {
 		align-items: center;
 		&:after{
 			content: '>';
-			margin: 0 4.5px;
+			margin: 0 4px;
 			color: $gray-511;
 			@include media-breakpoint-up(xl){
-				margin: 0 10px;
+				margin: 0 4px;
 			}
 		}
 		&:last-child{
@@ -891,19 +893,22 @@ iframe {
 	align-items: center;
 	text-decoration: none;
 
-	font-size: rem(12);
-	text-transform: uppercase;
+	font-size: rem(16);
+	// text-transform: uppercase;
 	color: $primary;
 	&:before{
 		content: '';
-		width: rem(16);
-		height: rem(16);
+		width: rem(18);
+		height: rem(18);
 		flex-shrink: 0;
 		margin-right: rem(12);
 
 		background-image: url(../img/svg/plus.svg);
-		background-size: cover;
+		background-size: 50%;
+		background-position: center;
 		background-repeat: no-repeat;
+		background-color: $primary;
+		border-radius: 2px;
 	}
 }
 //

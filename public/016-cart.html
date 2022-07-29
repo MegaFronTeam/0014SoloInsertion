@@ -10,7 +10,7 @@
 		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="libs/ion-rangeslider/css/ion.rangeSlider.min.css"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 		<link href="css/custom.css" rel="stylesheet"/>
@@ -711,7 +711,7 @@
 			<!-- end header-->
 			<!-- start sCart-->
 			<section class="sCart section" id="sCart">
-				<div class="sCart__bg"><img loading="lazy" src="img/@2x/sAbout-bg.png" alt=""/>
+				<div class="sCart__bg">
 				</div>
 				<div class="container">
 					<nav>
@@ -720,12 +720,10 @@
 							<li class="breadcrumb-item active"><a href="#"><span>Корзина</span></a></li>
 						</ol>
 					</nav>
-					<div class="section-title">
-						<h1>Корзина</h1>
-					</div>
 					<div class="sCart__white-box">
-						<div class="row gx-0 align-items-start">
+						<div class="sCart__row row align-items-start">
 							<div class="sCart__col sCart__col--left col-lg-8">
+								<h1>Моя корзина</h1>
 								<div class="tags-row row">
 									<div class="col-auto"><a class="tags-row__tag" href="#"><span class="tags-row__icon"><img loading="lazy" src="img/svg/sCart-action-1.svg" alt=""/></span><span>Очистить корзину</span></a>
 									</div>
@@ -751,7 +749,7 @@
 												</div>
 											</div>
 											<div class="cart-item__col col-auto pt-0 order-xl-last">
-												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a>
+												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a>
 												</div>
 											</div>
 											<div class="col-12 m-0 d-xl-none"></div>
@@ -769,7 +767,7 @@
 													</button>
 												</div>
 											</div>
-											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end align-self-center align-self-xl-start">
+											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end">
 												<div class="cart-item__price cart-item__price--old">196 990 руб.
 												</div>
 												<div class="cart-item__price cart-item__price--new">99 189 999 руб.
@@ -785,7 +783,10 @@
 														<div class="add-dd__lower-row row gy-3 gx-3 align-items-center">
 															<div class="add-dd__price-col col">10 998 руб.
 															</div>
-															<div class="col-auto"><a class="add-dd__buy-btn" href="#">Купить</a>
+															<div class="col-auto"><a class="add-dd__buy-btn" href="#">
+																<svg class="icon icon-basket ">
+																	<use xlink:href="img/svg/sprite.svg#basket"></use>
+																</svg></a>
 															</div>
 														</div>
 													</div>
@@ -799,7 +800,10 @@
 														<div class="add-dd__lower-row row gy-3 gx-3 align-items-center">
 															<div class="add-dd__price-col col">10 998 руб.
 															</div>
-															<div class="col-auto"><a class="add-dd__buy-btn" href="#">Купить</a>
+															<div class="col-auto"><a class="add-dd__buy-btn" href="#">
+																<svg class="icon icon-basket ">
+																	<use xlink:href="img/svg/sprite.svg#basket"></use>
+																</svg></a>
 															</div>
 														</div>
 													</div>
@@ -814,7 +818,7 @@
 											<div class="cart-item__col col"><a class="cart-item__title" href="#">Воздухоувлажнитель Marta MT-2695</a>
 											</div>
 											<div class="cart-item__col col-auto pt-0 order-xl-last">
-												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a>
+												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a>
 												</div>
 											</div>
 											<div class="col-12 m-0 d-xl-none"></div>
@@ -832,7 +836,7 @@
 													</button>
 												</div>
 											</div>
-											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end align-self-center align-self-xl-start">
+											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end">
 												<div class="cart-item__price cart-item__price--old">
 												</div>
 												<div class="cart-item__price cart-item__price--new">10 998 руб.
@@ -849,7 +853,7 @@
 												</div>
 											</div>
 											<div class="cart-item__col col-auto pt-0 order-xl-last">
-												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a>
+												<div class="cart-item__r-btns"><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-like.svg" alt=""/></a><a class="cart-item__r-btn" href="#"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/></a>
 												</div>
 											</div>
 											<div class="col-12 m-0 d-xl-none"></div>
@@ -867,7 +871,7 @@
 													</button>
 												</div>
 											</div>
-											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end align-self-center align-self-xl-start">
+											<div class="cart-item__col cart-item__col--price col-auto text-xl-start text-end">
 												<div class="cart-item__price cart-item__price--old">196 990 руб.
 												</div>
 												<div class="cart-item__price cart-item__price--new">189 999 руб.
@@ -883,7 +887,10 @@
 														<div class="add-dd__lower-row row gy-3 gx-3 align-items-center">
 															<div class="add-dd__price-col col">10 998 руб.
 															</div>
-															<div class="col-auto"><a class="add-dd__buy-btn" href="#">Купить</a>
+															<div class="col-auto"><a class="add-dd__buy-btn" href="#">
+																<svg class="icon icon-basket ">
+																	<use xlink:href="img/svg/sprite.svg#basket"></use>
+																</svg></a>
 															</div>
 														</div>
 													</div>
@@ -897,29 +904,14 @@
 														<div class="add-dd__lower-row row gy-3 gx-3 align-items-center">
 															<div class="add-dd__price-col col">10 998 руб.
 															</div>
-															<div class="col-auto"><a class="add-dd__buy-btn" href="#">Купить</a>
+															<div class="col-auto"><a class="add-dd__buy-btn" href="#">
+																<svg class="icon icon-basket ">
+																	<use xlink:href="img/svg/sprite.svg#basket"></use>
+																</svg></a>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="sCart__baner sCart-baner-js active">
-									<div class="sCart__b-bg"><img loading="lazy" src="img/@2x/sCart-baner-bg.png" alt=""/>
-									</div>
-									<div class="sCart__b-present"><img loading="lazy" src="img/@2x/sCart-baner-present.png" alt=""/>
-									</div>
-									<div class="row align-items-center flex-nowrap">
-										<div class="col">
-											<div class="sCart__b-txt">
-												добавить
-												<span class="text-primary">подарочную упаковку</span>
-											</div>
-										</div>
-										<div class="col-auto">
-											<div class="sCart__b-btn sCart-baner-btn-js"><img loading="lazy" src="img/svg/sCart-cross.svg" alt=""/>
 											</div>
 										</div>
 									</div>
@@ -960,7 +952,7 @@
 									</div>
 									<div class="sCart__sm-txt">Сумма включает НДС
 									</div>
-								</div><a class="sCart__order-btn" href="#">оформить заказ</a>
+								</div><a class="sCart__order-btn" href="#">Оформить заказ</a>
 								<div class="sCart__lower-txt"><a href="#">Авторизуйтесь</a>, чтобы воспользоваться персональными ценами и предложениями.
 								</div>
 							</div>

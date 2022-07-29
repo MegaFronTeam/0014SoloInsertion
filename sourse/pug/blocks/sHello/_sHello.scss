@@ -1,41 +1,50 @@
 // start .sHello
 .sHello {
 	--sPT: #{rem(33)};
-	--sPB: #{rem(30)};
+	--sPB: #{rem(20)};
 	--sTPB: #{rem(0)};
-
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(90)};
+		--sPB: #{rem(50)};
+	}
 	.section-title{
 		h2{
 			margin-bottom: rem(21);
+			color: $gray-900;
 		}
 		line-height: calc(20/16);
 		p{
-			margin-bottom: rem(19);
-		}
-		ul{
-			list-style: none;
-			padding: 0;
-			margin: 0 0 rem(20);
-
-			li{
-				br{
-					@include media-breakpoint-down(xl){
-						display: none;
-					}
-				}
-
-				margin-bottom: rem(8);
-				&:last-child{
-					margin-bottom: 0;
-				}
-				&:before{
-					content: '•';
-					display: inline-block;
-					margin-right: 4px;
-				}
-
+			color: $body-color;
+			margin-bottom: 0;
+			line-height: 1.75em;
+			&:not(:last-child) {
+				margin-bottom: rem(32);
 			}
 		}
+		// ul{
+		// 	list-style: none;
+		// 	padding: 0;
+		// 	margin: 0 0 rem(20);
+
+		// 	li{
+		// 		br{
+		// 			@include media-breakpoint-down(xl){
+		// 				display: none;
+		// 			}
+		// 		}
+
+		// 		margin-bottom: rem(8);
+		// 		&:last-child{
+		// 			margin-bottom: 0;
+		// 		}
+		// 		&:before{
+		// 			content: '•';
+		// 			display: inline-block;
+		// 			margin-right: 4px;
+		// 		}
+
+		// 	}
+		// }
 	}
 	&__{}
 	&__{}

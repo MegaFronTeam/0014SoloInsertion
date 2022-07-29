@@ -348,7 +348,7 @@
 		// @extend .form-group;
 		position: relative;
 		margin-bottom: rem(8);
-		--sp-y: #{$input-padding-y};
+		--sp-y: 0.80625rem;
 		--fz: #{$input-font-size};
 	}
 	&__btn{

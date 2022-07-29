@@ -3,7 +3,7 @@ mixin sForm()
 	+b.SECTION.sForm.section&attributes(attributes)
 		.container
 			+e.box.bg-wrap
-				+pic('dark-bg.png', 'bg', 0).picture-bg
+				//- +pic('dark-bg.png', 'bg', 0).picture-bg
 				//- +e.bg
 				//- 	img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 				+b.section-title
@@ -17,14 +17,14 @@ mixin sForm()
 						.col-lg
 							+input('Ваш комментарий','textarea')
 						.col-12.m-0
-						+e.left-col.col-lg-auto
-							+e.btn(type="submit") написать нам
-						.col-lg
+						+e.left-col--2.col-lg-auto
+							+e.btn(type="submit") Отправить
 							+e.policy
 								+e.p-txt
 									| Мы безопасно храним данные и никому их не передаём, вот
 									|
 									a(href="#") условия.
+						//- .col-lg
 	// end sForm
 
 mixin sFormAlt(data)
@@ -32,8 +32,8 @@ mixin sFormAlt(data)
 	+b.SECTION.sForm--alt.section&attributes(attributes)
 		.container
 			+e.box--alt
-				+e.bg
-					img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
+				//- +e.bg
+				//- 	img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 				if data.landPic
 					+pic('landForm-img.png', undefined, 0)(class="sForm__pic")
 				+b.section-title
@@ -46,7 +46,7 @@ mixin sFormAlt(data)
 						+e.inp-col.col-md-6.col-lg-auto
 							+input('Ваш телефон', 'tel')
 						.col-lg
-							+e.btn(type="submit") написать нам
+							+e.btn(type="submit") Отправить
 					+e.policy--mh0
 						+e.p-txt
 							| Мы безопасно храним данные и никому их не передаём, вот

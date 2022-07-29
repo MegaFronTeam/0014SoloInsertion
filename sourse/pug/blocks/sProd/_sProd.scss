@@ -734,8 +734,7 @@
 	
 }
 .reviews {
-	h3 {
-		@include rfs(24px);
+	h4 {
 		margin-bottom: rem(20);
 	}
 	&__stars {
@@ -744,9 +743,9 @@
 		margin-bottom: rem(39);
 		.icon {
 			font-size: rem(17);
-			color: #FFD2BF;
+			color: #CAE1B3;
 			&.active {
-				color: #FF8651;
+				color: #4C9900;
 			}
 		}
 	}
@@ -754,13 +753,15 @@
 		margin-left: rem(13);
 	}
 	&__btn {
-		@extend .btn-dark;
+		@extend .btn-primary;
 		display: block;
 		max-width: rem(193);
-		text-transform: uppercase;
-		margin-bottom: rem(54);
+		// text-transform: uppercase;
+		margin-bottom: rem(69);
 		// background-color: #212121;
 		// color: $white;
+		--bs-btn-font-weight: 700;
+		--bs-btn-padding-y: #{rem(12)};
 		&:hover {
 			color: #FF8651;
 		}
@@ -770,21 +771,23 @@
 		max-width: rem(1047);
 		background-color: $gray-125;
 		margin-bottom: rem(20);
+		border-radius: 10px;
 		@include media-breakpoint-up(sm) {
 			padding: rem(40) rem(86) rem(27) rem(66);
 		}
 	}
 	&__head {
 		display: flex;
-		align-items: center;
-		margin-bottom: rem(25);
+		align-items: flex-end;
+		margin-bottom: rem(20);
 		h4 {
-			margin-right: rem(22);
+			font-weight: 400;
+			margin-right: rem(10);
 			margin-bottom: 0;
 		}
 		p {
-			color: $gray-550;
-			font-size: rem(14);
+			color: $gray-511;
+			font-size: rem(12);
 			margin-bottom: 0;
 		}
 	}
@@ -805,7 +808,7 @@
 		}
 	}
 	&__col {
-		max-width: rem(280);
+		// max-width: rem(280);
 	}
 	&__text {
 		display: flex;
@@ -842,18 +845,19 @@
 		}
 	}
 	&__text-item {
-		margin-bottom: rem(24);
+		margin-bottom: rem(15);
 		&:not(:last-child) {
 			margin-bottom: rem(29);
 		}
 		h5 {
-			@include rfs(18px);
-			font-weight: 500;
+			@include rfs(16px);
+			font-weight: 700;
 			margin-bottom: rem(14);
 		}
 		p {
 			margin-bottom: 0;
-			font-size: rem(18);
+			font-size: rem(16);
+			color: $headings-color;
 		}
 	}
 	&__grade {
@@ -877,10 +881,12 @@
 	&__showMore {
 		width: 100%;
 		max-width: rem(1047);
-		border: 1px solid $gray-115;
-		color: #FF8651;
-		&:hover {
-			border-color: #000;
-		}
+		--bs-btn-border-color: #{$gray-830};
+		--bs-btn-hover-border-color: #{$gray-830};
+		--bs-btn-active-bg: #{$gray-830};
+		--bs-btn-color: #{$primary};
+		--bs-btn-active-color: #fff;
+		--bs-btn-padding-y: #{rem(17)};
+		--bs-btn-font-weight: 600;
 	}
 }

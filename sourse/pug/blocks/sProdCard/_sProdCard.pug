@@ -2,17 +2,11 @@ mixin sProdCard(data)
 	// start sProdCard
 	+b.SECTION.sProdCard(class=data.addClasses).section#sProdCard&attributes(attributes)
 		.container
-			if data.bgPage
-				+e.bg
-					img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
-					+e.t-cont.container
-						+e.t-white
 			+breadcrumb('Главная', 'Каталог', 'Холодильник Toshiba GR-RT565RS(N)')
 			+e.top-box
 				+b.section-title
 					h1 Холодильник Toshiba GR-RT565RS(N)
 				+b.tags-row.row
-					+sProdCardTag('t-messages', '0 отзывов')
 					+sProdCardTag('t-heart', 'В избранное')
 					+sProdCardTag('t-compare', 'Сравнить')
 					+sProdCardTag('t-share', 'Поделиться')
@@ -40,7 +34,6 @@ mixin sProdCard(data)
 			+e.mid-box
 				if data.bgPage
 					+e.bg--mid
-						img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 						+e.t-cont.container
 							+e.t-white
 				+middleContent()
@@ -59,9 +52,9 @@ mixin sProdCardBuyCol()
 					+e.tooltit
 						img(loading="lazy" src="img/svg/q-sign-orange.svg" alt="")
 			+e.btns-row.row
-				.col-6
+				.col-12
 					+e.btn--orange(href="#") В корзину
-				.col-6
+				.col-12
 					+e.btn--gray(href="#") Купить в 1 клик
 			+e.dicount(href="#") Оформить рассрочку
 		+e.pills
@@ -109,9 +102,13 @@ mixin sProdCardTabs(fBtnTxt='Характеристики')
 					.swiper-slide
 						+e.tabs-btn.tabs__btn 
 							| Отзывы
-							span 19
+							//- span 19
 					.swiper-slide
 						+e.tabs-btn.tabs__btn Доставка и оплата
+					.swiper-slide
+						+e.tabs-btn.tabs__btn Дополнительно
+					.swiper-slide
+						+e.tabs-btn.tabs__btn Документы
 		.tabs__wrap.prod-card-dd-items-js
 			+sProdCardTabsContent(fBtnTxt, 1, 'active')
 				+e.char-table
@@ -167,6 +164,34 @@ mixin sProdCardTabs(fBtnTxt='Характеристики')
 				+reviews()
 			+sProdCardTabsContent('Доставка и оплата', 3)
 				| 3
+			+sProdCardTabsContent('Доставка и оплата', 4)
+				| 4
+			+sProdCardTabsContent('Доставка и оплата', 5)
+				+e.row.row
+					.col-lg-6
+						+e.item(href="#")
+							+e.file
+								+e.type
+									| PDF
+									+icon('download2')
+								p 1.2MB
+							+e.text Инструкция по эксплуатации
+					.col-lg-6
+						+e.item(href="#")
+							+e.file
+								+e.type
+									| DOCX
+									+icon('download2')
+								p 2.0MB
+							+e.text Инструкция по эксплуатации
+					.col-lg-6
+						+e.item(href="#")
+							+e.file
+								+e.type
+									| JPG
+									+icon('download2')
+								p 1.8MB
+							+e.text Инструкция по эксплуатации
 
 mixin sProdCardTabsContent(tabName, imgNum, activeClasses='')
 	+e.tabs-content.tabs__content(class=activeClasses)
@@ -239,7 +264,7 @@ mixin sProdCardThumb(imgNum)
 
 mixin reviews()
 	+b.reviews
-		h3 Отзывы о Стиральная машина Miele WWV 980 WPS WhiteEdition 
+		h4 Отзывы о Стиральная машина Miele WWV 980 WPS WhiteEdition 
 		+e.stars
 			+icon('star').active
 			+icon('star').active
@@ -247,7 +272,7 @@ mixin reviews()
 			+icon('star').active
 			+icon('star')
 			+e.how-much 9 отзывов
-		+e.btn(href="#modal-reviews").btn.link-modal-js оставить отзыв
+		+e.btn(href="#modal-reviews").btn.link-modal-js Оставить отзыв
 		+reviewsItem()
 		+reviewsItem()
 		+e.showMore(href="#").btn.btn-outline-white Показать еще
@@ -267,21 +292,21 @@ mixin reviewsItem()
 						+icon('star').active
 						+icon('star').active
 						+icon('star')
-				+e.features
-					+e.text
-						p Шум
-						p 4
-					+e.line(style="--rate: 4")
-				+e.features
-					+e.text
-						p Качество стирки
-						p 3
-					+e.line(style="--rate: 3")
-				+e.features
-					+e.text
-						p Внешний вид
-						p 5
-					+e.line(style="--rate: 5")
+				//- +e.features
+				//- 	+e.text
+				//- 		p Шум
+				//- 		p 4
+				//- 	+e.line(style="--rate: 4")
+				//- +e.features
+				//- 	+e.text
+				//- 		p Качество стирки
+				//- 		p 3
+				//- 	+e.line(style="--rate: 3")
+				//- +e.features
+				//- 	+e.text
+				//- 		p Внешний вид
+				//- 		p 5
+				//- 	+e.line(style="--rate: 5")
 			.col-lg
 				+e.text-wrap
 					+e.text-item

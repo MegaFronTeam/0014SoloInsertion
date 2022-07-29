@@ -2,14 +2,14 @@ mixin sCart(data)
 	// start sCart
 	+b.SECTION.sCart.section#sCart&attributes(attributes)
 		+e.bg
-			img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
+			//- img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 		.container
 			+breadcrumb('Главная', 'Корзина')
-			+b.section-title
-				h1 Корзина
+			//- +b.section-title
 			+e.white-box
-				.row.gx-0.align-items-start
+				+e.row.row.align-items-start
 					+e.col--left.col-lg-8
+						h1 Моя корзина
 						+b.tags-row.row
 							+sProdCardTag('sCart-action-1', 'Очистить корзину')
 							+sProdCardTag('sCart-action-2', 'Поделиться')
@@ -37,20 +37,20 @@ mixin sCart(data)
 								inpVal: '2 шт.',
 								addDDClasses: 'active',
 							})
-						+e.baner.sCart-baner-js.active
-							+e.b-bg
-								img(loading="lazy" src='img/@2x/sCart-baner-bg.png' alt="")
-							+e.b-present
-								img(loading="lazy" src='img/@2x/sCart-baner-present.png' alt="")
-							.row.align-items-center.flex-nowrap
-								.col
-									+e.b-txt
-										| добавить
-										|
-										span.text-primary подарочную упаковку
-								.col-auto
-									+e.b-btn.sCart-baner-btn-js
-										img(loading="lazy" src=`img/svg/sCart-cross.svg` alt="")
+						//- +e.baner.sCart-baner-js.active
+						//- 	+e.b-bg
+						//- 		img(loading="lazy" src='img/@2x/sCart-baner-bg.png' alt="")
+						//- 	+e.b-present
+						//- 		img(loading="lazy" src='img/@2x/sCart-baner-present.png' alt="")
+						//- 	.row.align-items-center.flex-nowrap
+						//- 		.col
+						//- 			+e.b-txt
+						//- 				| добавить
+						//- 				|
+						//- 				span.text-primary подарочную упаковку
+						//- 		.col-auto
+						//- 			+e.b-btn.sCart-baner-btn-js
+						//- 				img(loading="lazy" src=`img/svg/sCart-cross.svg` alt="")
 					+e.col--right.col-lg
 						+e.promo
 							//- +e.INPUT.p-input.form-control(placeholder="Промокод" type="text")
@@ -66,7 +66,7 @@ mixin sCart(data)
 								+sCartChar('Скидка', '- 7 990 руб.')
 								+sCartChar('Итого', '313 898 руб.')
 							+e.sm-txt Сумма включает НДС
-						+e.order-btn(href="#") оформить заказ
+						+e.order-btn(href="#") Оформить заказ
 						+e.lower-txt
 							a(href="#") Авторизуйтесь
 							|, чтобы воспользоваться персональными ценами и предложениями.
@@ -92,9 +92,9 @@ mixin sCartItem(data)
 			+e.col.col-auto.pt-0.order-xl-last
 				+e.r-btns
 					+e.r-btn(href="#")
-						img(loading="lazy" src=`img/svg/sCart-cross.svg` alt="")
-					+e.r-btn(href="#")
 						img(loading="lazy" src=`img/svg/sCart-like.svg` alt="")
+					+e.r-btn(href="#")
+						img(loading="lazy" src=`img/svg/sCart-cross.svg` alt="")
 			.col-12.m-0.d-xl-none
 			+e.col--inputs.col.col-xl-auto
 				+e.inputs-bl
@@ -103,7 +103,7 @@ mixin sCartItem(data)
 						+icon('chevron-top')
 					+e.btn--plus(type="button")
 						+icon('chevron-bot')
-			+e.col--price.col-auto.text-xl-start.text-end.align-self-center.align-self-xl-start
+			+e.col--price.col-auto.text-xl-start.text-end
 				+e.price--old=`${data.oldPrice || ''}`
 				+e.price--new=data.currPrice
 		if data.hasAddBtn
@@ -126,4 +126,5 @@ mixin addDDItem()
 				+e.lower-row.row.gy-3.gx-3.align-items-center
 					+e.price-col.col 10 998 руб.
 					.col-auto
-						+e.buy-btn(href='#') Купить
+						+e.buy-btn(href='#')
+							+icon('basket')
