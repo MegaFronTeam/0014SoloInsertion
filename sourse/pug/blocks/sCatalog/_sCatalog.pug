@@ -3,7 +3,7 @@ mixin sCatalog(data)
 	+b.SECTION.sCatalog.section(class=data.addClasses)#sCatalog&attributes(attributes)
 		+e.baner
 			+e.bg
-				img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
+				//- img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 			.container
 				+e.b-content(class=(data.logo ? 'mw-100' : ''))
 					if data.hasBread
@@ -22,11 +22,11 @@ mixin sCatalog(data)
 							.tag-wrapper
 								+e.tags-row.row.sTags-row-js
 									-for(let i = 0; i < 4; i ++)
-										+sCatalogTag('Стиральные машины из Германии')
-										+sCatalogTag('Стиральные машины шириной 55 см')
-										+sCatalogTag('Узкие стиральные машины')
-										+sCatalogTag('Стиральные машины под раковину')
-										+sCatalogTag('Угловые стиральные машины')
+										+sCatalogTag('Холодильники Side-by-Side')
+										+sCatalogTag('Мини-бары')
+										+sCatalogTag('Холодильники с морозильной камерой')
+										+sCatalogTag('Холодильники без морозильной камеры')
+										+sCatalogTag('Винные шкафы')
 									.col-auto.d-none.d-md-block
 										+e.btn--toggle.sTags-btn-js
 											span Показать еще
@@ -61,7 +61,7 @@ mixin sCatalog(data)
 									+e.view-row.row
 										+sCatalogViewItem(1)
 										+sCatalogViewItem(2, 'active')
-						+e.items-row.row.gy-0.gx-0
+						+e.items-row.row
 							if data.hasAltView
 								+sCatalogCardLong({
 									imgNum: '1',
@@ -114,7 +114,7 @@ mixin sCatalog(data)
 							.col-12
 								+e.show-more(href="#") Показать еще
 						+e.pugin-wrap
-							+pugin(false)
+							+pugin()
 						.tags-slider-wrap
 							.tags-slider-js
 								.tag-wrapper
@@ -132,10 +132,11 @@ mixin sCatalog(data)
 												span Показать еще
 												span Скрыть
 						+sCatalogArticles()
+
 	// end sCatalog
 
 mixin sCatalogCard(data)
-	+e.prod-col.col-sm-6.col-md-4.col-lg-4.col-xxl-3
+	+e.prod-col.col-sm-6.col-md-4.col-lg-4
 		+b.prod-item--card
 			- var imgAmount = data.imgAmount || 1;
 			+e.a-slider
@@ -152,7 +153,7 @@ mixin sCatalogCard(data)
 								+sFamiliarSlideChar('Морозильная камера:', 'снизу')
 								+sFamiliarSlideChar('Цвет:', 'золотистый')
 					.swiper-pagination
-			.small.text-secondary.text-center Шкафы для подогрева посуды
+			//- .small.text-secondary.text-center Шкафы для подогрева посуды
 			+e.title
 				a(href="#").text-body.tdn=data.title
 			+e.foot-row.row.align-items-center

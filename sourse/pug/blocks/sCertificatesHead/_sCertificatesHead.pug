@@ -1,9 +1,10 @@
 mixin sCertificatesHead(data)
 	// start sCertificatesHead
 	+b.SECTION.sCertificatesHead.section#sCertificatesHead&attributes(attributes)
-		+pic('sCertificates-head-1.jpg', 'bg').picture-bg.offer-under
-		+pic('sCertificates-head.jpg', 'bg').picture-bg.offer-i
-		.container
+		//- +pic('sCertificates-head-1.jpg', 'bg').picture-bg.offer-under
+		//- +pic('sCertificates-head.jpg', 'bg').picture-bg.offer-i
+		+e.container.container
+			+img('img/@2x/sAbout-bg-2.png')
 			.row 
 				.col-lg-6 
 					+e.offer

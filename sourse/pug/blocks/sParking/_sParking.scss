@@ -1,27 +1,40 @@
 // start .sParking
 .sParking {
-		--sPT: 0;
-		--sPB: 0;
-		// --sTPB: ;
+	--sPT: 0;
+	--sPB: 0;
+	// --sTPB: ;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 12px;
+		background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+		opacity: .5;
+		left: 0;
+		top: 0;
+	}
 	p {
 		margin-bottom: 0;
-		font-size: rem(26);
-		color: $white;
+		font-size: rem(20);
+		color: $gray-900;
 		@include media-breakpoint-down(sm) {
 			font-size: rem(16);
 		}
 	}
 	&__icon {
-		background-color: $gray-290;
+		background-color: $primary;
 		display: inline-block;
     padding: 19px;
-    border-radius: 50%;
+    border-radius: 10px;
 		margin-right: rem(78);
 		@include media-breakpoint-down(sm) {
 			margin-right: rem(40);
 		}
 		.icon {
-			font-size: rem(48);
+			color: #fff;
+			font-size: rem(42);
 		}
 	}
 	&__about-parking {
@@ -42,6 +55,10 @@
 			background-color: $gray-290;
 			left: rem(-295px);
 			z-index: -1;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: #{rem(70)};
+			padding-bottom: #{rem(50)};
 		}
 	}
 	&__image {

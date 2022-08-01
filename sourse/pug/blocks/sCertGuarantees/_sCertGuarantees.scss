@@ -1,8 +1,21 @@
 // start .sCertGuarantees
 .sCertGuarantees {
-		// --sPT: ;
-		// --sPB: ;
-		// --sTPB: ;
+	--sPT: #{rem(34)};
+	--sPB: #{rem(34)};
+	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(68)};
+		--sPB: #{rem(68)};
+	}
+	.section-title {
+		padding-bottom: rem(30);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(50);
+		}
+	}
+	h2 {
+		@include rfs(26px);
+	}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -15,14 +28,28 @@
 
 .certGuarteesI{
 	max-width: 323px;
-	font-size: rem(20);
+	font-size: rem(16);
+	@include media-breakpoint-up(lg) {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 200vw;
+			height: 1px;
+			background-color: $primary;
+			left: -100vw;
+			top: rem(37);
+			z-index: -1;
+		}
+	}
 	&__i{
 		width: 70px;
 		height: 70px;
-		border-radius: 100%;
-		background: $gray-290;
+		border-radius: 10px;
+		background-color: $primary;
 		padding: 17px;
-		margin-bottom: 30px;
+		margin-bottom: 36px;
 	}
 }
 

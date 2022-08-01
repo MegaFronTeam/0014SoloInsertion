@@ -3,32 +3,26 @@ mixin sArticals(data)
 	+b.sArticals.section#sArticals&attributes(attributes)
 		.container
 			+e.row.row
-				+sArticalsItem(1, 'Как правильно выбрать холодильник')
-				+sArticalsItem(2, 'Миксеры: выбираем правильный')
-				+sArticalsItem(3, 'Все о посудомоечной машину')
-				+sArticalsItem(4, 'Как правильно выбрать мясорубку')
-				+sArticalsItem(5, 'Как правильно выбрать холодильник')
-				+sArticalsItem(1, 'Как правильно выбрать холодильник')
-				+sArticalsItem(1, 'Как правильно выбрать холодильник')
-				+sArticalsItem(2, 'Миксеры: выбираем правильный')
-				+sArticalsItem(3, 'Все о посудомоечной машину')
-				+sArticalsItem(4, 'Как правильно выбрать мясорубку')
-				+sArticalsItem(5, 'Как правильно выбрать холодильник')
-				+sArticalsItem(1, 'Как правильно выбрать холодильник')
+				+sArticalsItem(1, 'Как выбрать ручной фрезер', 'Как выбрать<br>ручной фрезер')
+				+sArticalsItem(2, 'Как выбрать тепловую пушку', 'Как выбрать<br>тепловую пушку')
+				+sArticalsItem(3, 'Уход за триммером', 'Уход за<br>триммером')
+				+sArticalsItem(4, 'Виды и характеристики бензопил', 'Виды и характеристики<br>бензопил')
+				+sArticalsItem(5, 'Как выбрать тепловую пушку', 'Садовых<br>пылесосов')
+				+sArticalsItem(6, 'Как выбрать сварочный аппарат', 'Как выбрать<br>сварочный аппарат')
 			+e.pugin-cont
 				+pugin()
 
 	// end sArticals
 
-mixin sArticalsItem(imgNum, title)
+mixin sArticalsItem(imgNum, title, subtitle)
 	.col-sm-6.col-lg-4
-		+sArticalsItemSingle(imgNum, title)
+		+sArticalsItemSingle(imgNum, title, subtitle)
 
-mixin sArticalsItemSingle(imgNum, title)
+mixin sArticalsItemSingle(imgNum, title, subtitle)
 	+b.sArticalsitem
 		+e.img(href="#")
 			img(loading="lazy" src=`img/@2x/sArticals-${imgNum}.jpg` alt="")
-			+e.date 12 февраля 2021
+			+e.date!= subtitle
 		+e.title(href="#")=title
-		+e.descr Бензиновый мотобур относится к узкоспециализированным инструментам. Он применяется для бурения почвы и льда. Само по себе устройство не ново, но тем не менее на современном рынке
-		+e.read-more(href="#") Читать подробнее
+		//- +e.descr Бензиновый мотобур относится к узкоспециализированным инструментам. Он применяется для бурения почвы и льда. Само по себе устройство не ново, но тем не менее на современном рынке
+		//- +e.read-more(href="#") Читать подробнее

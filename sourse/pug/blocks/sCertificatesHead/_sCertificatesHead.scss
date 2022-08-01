@@ -1,9 +1,31 @@
 // start .sCertificatesHead
 .sCertificatesHead {
-	--sPT: #{rem(140)};
-	--sPB: #{rem(332)};
+	--sPT: #{rem(100)};
+	// --sPB: #{rem(100)};
+	--sPB: #{rem(180)};
 	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(128)};
+		--sPB: #{rem(173)};
+	}
 	position: relative;
+	background-color: $gray-110;
+	&__container {
+		position: relative;
+		img {
+			position: absolute;
+			bottom: calc((var(--sPB) * -1) + 18px);
+			width: 100%;
+			max-width: rem(203);
+			left: rem(10);
+			@include media-breakpoint-up(lg) {
+				right: 0;
+				left: unset;
+				max-width: rem(360);
+				bottom: calc((var(--sPB) * -1) + 36px);
+			}
+		}
+	}
 	.offer-under{
 		img{
 			width: 100%;
@@ -36,10 +58,11 @@
 } // end.sCertificatesHead
 
 .sCertificatesHead__offer{
-	color: $white;
+	color: $body-color;
 	h2{
-		color: $white;
-		@include rfs(59px);
+		color: $gray-900;
+		margin-bottom: rem(26);
+		@include rfs(56px);
 	}
 	
 }

@@ -1,4 +1,4 @@
-mixin sForm()
+mixin sForm(title, text)
 	// start sForm
 	+b.SECTION.sForm.section&attributes(attributes)
 		.container
@@ -7,8 +7,8 @@ mixin sForm()
 				//- +e.bg
 				//- 	img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 				+b.section-title
-					h2 Хотите связаться с нами и что-то предложить?
-					p Заполните форму обратной связи, напишите ваше мнение. Мы ответим вам на указанную почту
+					h2!= title
+					p!= text
 				+form-wrap()
 					+e.row.row
 						+e.left-col.col-lg-auto

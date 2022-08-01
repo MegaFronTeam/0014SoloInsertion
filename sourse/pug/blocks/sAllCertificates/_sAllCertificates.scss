@@ -4,6 +4,16 @@
 		--sPB: #{rem(122)};
 		--sTPB: 0 ;
 	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: rem(282);
+		top: 0;
+		left: 0;
+		background-color: $gray-110;
+	}
 	&__line{
 		width: 100%;
 		position: absolute;

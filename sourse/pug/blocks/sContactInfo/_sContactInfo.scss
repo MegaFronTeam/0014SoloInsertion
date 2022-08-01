@@ -8,6 +8,7 @@
 		@include media-breakpoint-up(lg) {
 			width: var(--asideW);
 			margin-bottom: 33px;
+			margin-top: 33px;
 		}
 	}
 	&__bg {

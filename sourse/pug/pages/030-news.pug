@@ -19,7 +19,7 @@ include ../blocks/sNewsHeader/_sNewsHeader.pug
 include ../blocks/sNewsCards/_sNewsCards.pug
 
 block variables
-	- let  mainPage= null 
+	- let  mainPage= 'inner-page'
 	- let  bg= null
 
 block title
@@ -37,10 +37,10 @@ block pagecontent
 			h1!= title
 	+sNewsHeader()
 	+sNewsCards()
-	+sFormNews({
-		title: 'Подпишись на наши новости!',
-		descr: 'Заполни форму и ты всегда будешь в курсе самых последних новостей и новинок нашего салона!',
-	})
+	//- +sFormNews({
+	//- 	title: 'Подпишись на наши новости!',
+	//- 	descr: 'Заполни форму и ты всегда будешь в курсе самых последних новостей и новинок нашего салона!',
+	//- })
 	//- +sGuarantee()
 	//- +sTermsOfSale()
 	//- +sServiceCenterHead()

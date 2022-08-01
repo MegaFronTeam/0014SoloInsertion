@@ -461,7 +461,7 @@
 
     background-color: $primary;
     &:hover{
-      background-color: #7EB449;
+      background-color: $primary;
     }
 
     img:first-child{
@@ -471,7 +471,7 @@
       opacity: 0;
     }
     &.active{
-      background-color: $green2!important;
+      background-color: $primary!important;
       img:first-child{
         opacity: 0;
       }

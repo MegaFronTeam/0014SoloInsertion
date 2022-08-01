@@ -18,7 +18,7 @@ include ../blocks/sAllCertificates/_sAllCertificates.pug
 
 
 block variables
-	- let  mainPage= null 
+	- let  mainPage= 'inner-page'
 	- let  bg= none
 
 block title
@@ -37,7 +37,7 @@ block pagecontent
 	+sCertificatesHead()
 	+sCertGuarantees()
 	+sAllCertificates()
-	//- +sForm()
+	//- +sForm('Хотите связаться с нами и что-то предложить?', 'Заполните форму обратной связи, напишите ваше мнение. Мы ответим вам на указанную почту')
 	//- +headerBlock()
 	//- +sFamiliar({
 	//- 	title: `Последние поступления`,
