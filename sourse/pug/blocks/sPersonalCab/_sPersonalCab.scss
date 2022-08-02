@@ -104,9 +104,9 @@
 		}
 		&--right{
 			padding: 0 var(--wb-shift-x) var(--wb-pt) var(--wb-shift-x);
-			@include media-breakpoint-up(base){
-				padding: rem(58) rem(62) 0 rem(62);
-			}
+			// @include media-breakpoint-up(base){
+			// 	padding: rem(58) rem(62) 0 rem(62);
+			// }
 
 			@include media-breakpoint-up(xxl){
 				max-width: calc(1140px)!important;
