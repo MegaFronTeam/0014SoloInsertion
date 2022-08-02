@@ -12,8 +12,9 @@
 		padding-bottom: rem(48);
 		h2{
 			@include rfs(20px);
-			max-width: 1190px;
+			max-width: 1120px;
 			margin-bottom: 0;
+			color: $gray-900;
 		}
 	}
 	&__row-wrap{
@@ -29,8 +30,8 @@
 			// }
 			@include media-breakpoint-up(lg) {
 			margin-bottom: rem(90);
-			padding-top: rem(70);
-			padding-bottom: rem(70);
+			padding-top: rem(90);
+			padding-bottom: rem(75);
 		}
 	}
 	&__row{

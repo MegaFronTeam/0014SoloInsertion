@@ -180,10 +180,16 @@
 		font-size: rem(32);
 		line-height: 1.2;
 		font-weight: 600;
+		@include media-breakpoint-up(lg) {
+			font-size: rem(20);
+		}
 		span {
 			font-size: rem(50);
 			font-weight: 700;
 			text-transform: uppercase;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(32);
+			}
 		}
 	}
 	&__c-descr{

@@ -1,10 +1,14 @@
 // start .sNewsHeader
 .sNewsHeader {
-	--sPT: #{rem(70)};
-	--sPB: #{rem(70)};
+	--sPT: #{rem(45)};
+	--sPB: #{rem(45)};
 	// --sTPB: ;
 	position: relative;
 	z-index: 1;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(70)};
+		--sPB: #{rem(70)};
+	}
 	&:before {
 		content: '';
 		position: absolute;

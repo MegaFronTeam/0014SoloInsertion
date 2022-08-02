@@ -215,13 +215,15 @@ mixin sCatalogCardLong(data)
 					+e.foot-row.row.align-items-center.gx-3.gy-2
 						.col
 							+e.buy-btn(href="#modal-callback" data-fancybox='').active
-								+icon('plus')
-								+icon('check')
+								//- +icon('plus')
+								//- +icon('check')
+								img(loading="lazy" src="img/svg/n-cart.svg" alt="")
+								img(loading="lazy" src="img/svg/n-cart-done.svg" alt="")
 								+e.SPAN.text
 									span Купить
 									span В корзине
-						.col-auto
-							+e.credit(href="#") Оформить рассрочку
+						//- .col-auto
+						//- 	+e.credit(href="#") Оформить рассрочку
 
 mixin longProdDeliveryItem(key, val)
 	+e.d-item

@@ -563,7 +563,7 @@
 	--bs-gutter-x: #{rem(24px)};
 	padding-bottom: rem(25);
 	@include media-breakpoint-up(lg){
-		padding-bottom: rem(30);
+		padding-bottom: rem(25);
 		--bs-gutter-x: #{rem(30px)};
 	}
 
@@ -599,6 +599,7 @@
 		padding: rem(15);
 		position: absolute;
 		box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .1);
+		z-index: 1;
 		.ya-share2__list{
 			display: flex;
 		}

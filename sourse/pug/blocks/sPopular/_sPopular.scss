@@ -54,6 +54,7 @@
 			max-width: max-content;
 			background-color: $gray-110;
 			position: relative;
+			color:  $body-color;
 			&::before {
 				content: '';
 				position: absolute;

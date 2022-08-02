@@ -2,7 +2,7 @@ mixin sPersonalCab(data)
 	// start sPersonalCab
 	+b.SECTION.sPersonalCab.section#sPersonalCab&attributes(attributes)
 		+e.bg
-			img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
+			//- img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
 		.container
 			+breadcrumb('Главная', data.bcTxt)
 			+b.section-title
@@ -16,7 +16,7 @@ mixin sPersonalCab(data)
 									+e.img
 										img(loading="lazy" src="img/svg/portrait-stab.svg" alt="")
 								.col
-									+e.name Сергей
+									+e.name +7 987 654 23
 									+e.mail ivanov@yandex.ru
 								.col-auto.d-lg-none
 									+e.mob-quit(href="#") Выход
@@ -98,17 +98,17 @@ mixin sPersonalCabOrder(data)
 					+goodsItem()
 					+goodsItem()
 					+goodsItem()
-			+e.lower-box
-				+e.lb-chars
-					+CabOrderChar('Товары', '99')
-					+CabOrderChar('Вес', '30 кг')
-					+CabOrderChar('Скидка', '-11 890 ₽', 'text-primary')
-					+CabOrderChar('Промокод', '-11 890 ₽', 'text-primary')
-					+CabOrderChar('ИТОГО', '33 294  ₽')
-				if data.backBtn
-					+e.btn--dark(href="#") оформить возврат
-				if data.payBtn
-					+e.btn--orange(href="#") оплатить
+			//- +e.lower-box
+			//- 	+e.lb-chars
+			//- 		+CabOrderChar('Товары', '99')
+			//- 		+CabOrderChar('Вес', '30 кг')
+			//- 		+CabOrderChar('Скидка', '-11 890 ₽', 'text-primary')
+			//- 		+CabOrderChar('Промокод', '-11 890 ₽', 'text-primary')
+			//- 		+CabOrderChar('ИТОГО', '33 294  ₽')
+			//- 	if data.backBtn
+			//- 		+e.btn--dark(href="#") оформить возврат
+			//- 	if data.payBtn
+			//- 		+e.btn--orange(href="#") оплатить
 
 mixin CabOrderChar(key, val, addClass)
 	+e.lb-char.row(class=addClass)

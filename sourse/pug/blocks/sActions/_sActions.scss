@@ -1,7 +1,7 @@
 // start .sActions
 .sActions {
 	--sPT: #{rem(11)};
-	--sPB: #{rem(100)};
+	--sPB: #{rem(60)};
 	--sTPB: #{rem(35)};
 	@include media-breakpoint-up(lg) {
 		--sPT: #{rem(103)};

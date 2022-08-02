@@ -342,6 +342,9 @@
 			@include media-breakpoint-up(lg) {
 				max-width: none;
 			}
+			&__input-wrap {
+				--sp-y: #{rem(15.5)};
+			}
 			&__policy {
 				max-width: none;
 				margin-top: 0;

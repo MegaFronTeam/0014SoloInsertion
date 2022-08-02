@@ -60,7 +60,9 @@ block pagecontent
 								.oformlenie
 									.oformlenie-accordeon
 										.oformlenie-accordeon-block.js_sale_order_tabs_tab.js_sale_order_tabs_tab__step1
-											h2.oformlenie-accordeon-title(onclick='CShopSaleOrder.goToTab(1); return false;') 1. Личные данные
+											h2.oformlenie-accordeon-title(onclick='CShopSaleOrder.goToTab(1); return false;') 
+												span 1 
+												| Личные данные
 											.oformlenie-accordeon-content
 												.oformlenie-tabs
 													ul.oformlenie-tabs__caption.d-flex
@@ -88,7 +90,9 @@ block pagecontent
 																a(onclick='JSCMainSite.openAuth(); return false;' href='#') Авторизуйтесь
 																| , чтобы воспользоваться персональными ценами и предложениями.
 										.oformlenie-accordeon-block.js_sale_order_tabs_tab.js_sale_order_tabs_tab__step2
-											h2.oformlenie-accordeon-title(onclick='CShopSaleOrder.goToTab(2); return false;') 2. Способ доставки
+											h2.oformlenie-accordeon-title(onclick='CShopSaleOrder.goToTab(2); return false;') 
+												span 2 
+												| Способ доставки
 											.oformlenie-accordeon-content
 												.oformlenie-tabs
 													h6 Выберите город доставки
@@ -159,7 +163,9 @@ block pagecontent
 														svg(width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg')
 															path(d='M12.5 5L8.5 1M12.5 5L8.5 9M12.5 5H0' stroke='#FF8651')
 										.oformlenie-accordeon-block.js_sale_order_tabs_tab.js_sale_order_tabs_tab__step3
-											h2.oformlenie-accordeon-title.active(onclick='CShopSaleOrder.goToTab(3); return false;') 3. Способ оплаты
+											h2.oformlenie-accordeon-title.active(onclick='CShopSaleOrder.goToTab(3); return false;') 
+												span 3 
+												| Способ оплаты
 											.oformlenie-accordeon-content.active
 												+b.pay-block
 													.row
@@ -218,7 +224,7 @@ block pagecontent
 																	| Никаких дополнительных платежей — как обычная оплата картой
 												.d-flex.oformlenie-end.align-items-center
 													button.oformlenie-btn.js-submit-order(type='submit')
-														| оформить заказ
+														| Оформить заказ
 													p.oformlenie-politika
 														| Нажимая кнопку "Оформить заказ" я соглашаюсь с 
 														a(href='/about/polozhenie-o-personalnykh-dannykh/' target='_blank') Положением о персональных данных
@@ -253,7 +259,7 @@ block pagecontent
 
 												.d-flex.oformlenie-end.align-items-center
 													button.oformlenie-btn.js-submit-order(type='submit')
-														| оформить заказ
+														| Оформить заказ
 													p.oformlenie-politika
 														| Нажимая кнопку "Оформить заказ" я соглашаюсь с 
 														a(href='/about/polozhenie-o-personalnykh-dannykh/' target='_blank') Положением о персональных данных

@@ -71,6 +71,8 @@
 	&__slider-wrap{
 		position: relative;
 		.swiper{
+			padding: 20px;
+			margin: -20px;
 			// @include media-breakpoint-down(md){
 			// 	overflow: visible!important;
 			// }
@@ -106,6 +108,7 @@
 		border: none;
     border-radius: 10px;
     box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+		background-color: #FFFFFF;
 	}
 	.swiper-prev{
 		right: calc(100% + 10px);

@@ -1304,8 +1304,8 @@ iframe {
 				border: 1px solid #C9C9C9;
 				background-position: center center;
 				background-repeat: no-repeat;
-				background-size: 66%;
-
+				background-size: 50%;
+				flex: 0 0 auto;
 				&:checked{
 					background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='4' fill='#{#5E5E5E}'/></svg>");
 				}
@@ -1321,17 +1321,18 @@ iframe {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				border-radius: 50%;
+				border-radius: 10px;
 				width: rem(70);
 				height: rem(70);
-				background: #EEEEEE;
+				background: $gray-110;
 			}
 			&__text{
 				display: inline-flex;
 				align-items: center;
-				background: #EEEEEE;
+				background: $gray-110;
 				padding: rem(15px) rem(40px);
 				min-height: rem(70);
+				border-radius: 10px;
 			}
 		}
 

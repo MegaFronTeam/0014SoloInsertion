@@ -135,7 +135,7 @@
 	}
 	&__main-link{
 		display: block;
-		line-height: calc(20/16);
+		line-height: 1.75em;
 		// padding: rem(7) 0;
 		margin-bottom: rem(9);
 	}
@@ -192,8 +192,8 @@
 					content: '';
 					background: linear-gradient(0deg, #ADADAD, #ADADAD);
 					border-radius: 20px;
-					width: 8px;
-					height: 8px;
+					width: 6px !important;
+					height: 6px !important;
 					border-radius: 50%;
 					position: absolute;
 					left: 0;
@@ -209,6 +209,8 @@
 			tr {
 				&:first-child {
 					box-shadow: 0 5px 16px rgb(0 0 0 / 30%);
+					position: relative;
+    			z-index: 1;
 				}
 				&:not(:first-child) {
 					background-color: $gray-120;

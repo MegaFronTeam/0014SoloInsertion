@@ -151,8 +151,10 @@
 		line-height: calc(19/14);
 		color: $gray-511;
 		margin-bottom: 0;
-		margin-left: rem(17);
 		max-width: rem(273);
+		@include media-breakpoint-up(md) {
+			margin-left: rem(17);
+		}
 	}
 	&__mail-form{
 		position: relative;
@@ -349,7 +351,7 @@
 		position: relative;
 		margin-bottom: rem(8);
 		--sp-y: 0.80625rem;
-		--fz: #{$input-font-size};
+		--fz: 16px;
 	}
 	&__btn{
 		

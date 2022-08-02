@@ -48,7 +48,16 @@
 		// 	padding-top: rem(50);
 		// }
 	}
-	&__{}
+	&__col{
+		&:nth-child(2), &:nth-child(5) {
+			.sArticalsitem {
+				&__date {
+					bottom: unset;
+					top: 28px;
+				}
+			}
+		}
+	}
 } // end.sArticals
 
 .sArticalsitem{
@@ -79,6 +88,7 @@
 		padding: rem(10) rem(15) rem(10) rem(25);
 		line-height: calc(20/16);
 		color: $white;
+		min-width: rem(150);
 		&:before {
 			content: '';
 			position: absolute;

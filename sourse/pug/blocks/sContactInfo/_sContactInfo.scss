@@ -105,9 +105,10 @@
 		a {
 			font-size: rem(14);
 			text-decoration: none;
+			display: block;
 			.icon-contact-info-arrow {
 				fill: none;
-				stroke: $orange;
+				stroke: $primary;
 				font-size: 6px;
 				margin-left: 12px;
 			}

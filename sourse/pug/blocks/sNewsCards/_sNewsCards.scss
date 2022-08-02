@@ -221,17 +221,17 @@
 		color: $white;
 		font-weight: 700;
 		padding: rem(16) rem(20) rem(16) rem(30);
-		border-radius: 0px 10px 10px 0px;
-
+		
 		@include media-breakpoint-up(lg) {
 			right: auto;
 			left: rem(-117);
 			padding: rem(16) 7px;
 			justify-content: flex-start;
+			border-radius: 0px 10px 10px 0px;
 		}
 		span {
 			display: inline-block;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			font-size: rem(16);
 			line-height: calc(20 / 16);
 			margin-right: rem(20);
