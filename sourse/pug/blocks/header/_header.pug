@@ -103,30 +103,48 @@ mixin searchDDItem(txt)
 					block
 
 mixin catalogDDContent(mod='')
-	+e.content
-		+catalogDDMenuItem(`Варочные панели ${mod}`)
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-		+catalogDDMenuItem('Винные шкафы')
-		+catalogDDMenuItem('Вытяжки')
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-		+catalogDDMenuItem('Духовые шкафы')
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-		+catalogDDMenuItem('Кофемашины')
-		+catalogDDMenuItem('Микроволновые печи')
-		+catalogDDMenuItem('Морозильные камеры')
-		+catalogDDMenuItem('Посудомоечные машины')
-		+catalogDDMenuItem('Стиральные машины')
-		+catalogDDMenuItem('Холодильники')
-			li: a(href='#') Панели домино
-			li: a(href='#') Панели домино
-		+catalogDDMenuItem('Шкафы для подогрева посуды')
+	.row
+		.col
+			+e.content
+				+catalogDDMenuItem(`Варочные панели ${mod}`)
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+				+catalogDDMenuItem('Винные шкафы')
+				+catalogDDMenuItem('Вытяжки')
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+				+catalogDDMenuItem('Духовые шкафы')
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+				+catalogDDMenuItem('Кофемашины')
+				+catalogDDMenuItem('Микроволновые печи')
+				+catalogDDMenuItem('Морозильные камеры')
+				+catalogDDMenuItem('Посудомоечные машины')
+				+catalogDDMenuItem('Стиральные машины')
+				+catalogDDMenuItem('Холодильники')
+					li: a(href='#') Панели домино
+					li: a(href='#') Панели домино
+				+catalogDDMenuItem('Шкафы для подогрева посуды')
+		.col-auto
+			+e.logos
+				a(href="#")
+					+img('img/@2x/brand-logo-1.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-2.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-3.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-4.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-3.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-4.png') 
+				a(href="#")
+					+img('img/@2x/brand-logo-4.png') 
 
 
 mixin catalogDDMenuItem(title)
@@ -141,7 +159,7 @@ mixin catalogDDTabsBtn(imgNum, txt, activeClasses='')
 			+e.btn-row.row
 				.col
 					+e.txt=txt
-				.col-4.d-none.d-lg-block
-					if imgNum
-						+e.img
-							img(loading="lazy" src=`img/@2x/catalogdd-${imgNum}.png` alt="")
+				//- .col-4.d-none.d-lg-block
+				//- 	if imgNum
+				//- 		+e.img
+				//- 			img(loading="lazy" src=`img/@2x/catalogdd-${imgNum}.png` alt="")

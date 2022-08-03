@@ -37,7 +37,7 @@
 	z-index: 1;
 	&__bg{
 		position: absolute;
-		z-index: 0;
+		z-index: -1;
 		bottom: 0;
 		left: 0;
 		width: 100%;
@@ -290,6 +290,9 @@
 		@include media-breakpoint-up(base){
 			margin-bottom: rem(43);
 		}
+		&--2 {
+			margin-bottom: rem(18);
+		}
 	}
 	.form-wrap__input-wrap{
 		label{
@@ -513,8 +516,49 @@
 		@extend .plus-link;
 		line-height: 1;
 	}
-	&__{}
-	&__{}
+	&__tags-row{
+		margin-bottom: rem(28);
+		a {
+			color: $gray-511;
+			font-size: rem(14);
+			text-decoration: none;
+		}
+		.icon {
+			font-size: rem(24);
+			color: $gray-511;
+			margin-right: rem(10);
+		}
+	}
+	&__row{
+		--bs-gutter-y: #{rem(30)};
+	}
+	&__bonus {
+		padding: rem(20) rem(25);
+		background-color: $gray-110;
+		border-radius: 10px;
+		@include media-breakpoint-up(lg) {
+			padding: rem(40) rem(50);
+		}
+		p {
+			margin-bottom: 0;
+			&:first-child {
+				margin-bottom: rem(13);
+				@include media-breakpoint-up(lg) {
+					margin-bottom: rem(27);
+				}
+			}
+			span {
+				font-size: rem(25);
+				font-weight: 600;
+				margin-right: rem(7);
+				vertical-align: middle;
+				@include media-breakpoint-up(lg) {
+					margin-right: rem(15);
+					font-size: rem(56);
+				}
+			}
+		}
+	}
 } // end.sPersonalCab
 
 //

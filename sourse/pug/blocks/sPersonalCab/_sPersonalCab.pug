@@ -23,8 +23,20 @@ mixin sPersonalCab(data)
 						+e.links
 							-for(let [index,link] of Object.entries(data.sbLinks))
 								+e.link(href="#" class=`${index == data.sbActive ? 'current' : ''}`)=link
-					+e.col--right.col-lg
-						+e.H2.sub-title=data.subTitle
+					+e.col--right.col-lg-9
+						if !data.favorite
+							+e.H2.sub-title=data.subTitle
+						else 
+							+e.H2.sub-title--2=data.subTitle
+							+e.tags-row.row
+								.col-auto
+									a(href="#") 
+										+icon('delete')
+										| Очистить список
+								.col-auto
+									a(href="#") 
+										+icon('basket-small')
+										| Добавить все в корзину
 						if data.personalData
 							+form-wrap
 								+e.inputs
@@ -63,6 +75,59 @@ mixin sPersonalCab(data)
 									activeClasses: '',
 									status: 'Доставлен',
 								})
+						if data.favorite
+							+e.row.row
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 1,
+								})
+								+sCatalogCard({
+									imgNum: '2',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 2,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 3,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 4,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 4,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 1,
+								})
+								+sCatalogCard({
+									imgNum: '2',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 2,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 3,
+								})
+								+sCatalogCard({
+									imgNum: '1',
+									title: 'Стиральная машина HAIER HW70-12829A',
+									imgAmount: 4,
+								})
+						if data.bonus
+							+e.bonus
+								p У вас на счете
+								p
+									span 1200
+									| бонусов
 	// end sPersonalCab
 
 mixin sPersonalCabOrder(data)

@@ -1124,9 +1124,10 @@ function eventHandler() {
     $(this).parent().toggleClass( "active" );
     $(this).siblings('.dropdown__content').slideToggle();
   });
+
+  $('.filepond').filepond();
 }
 
-;
 
 if (document.readyState !== 'loading') {
   eventHandler();

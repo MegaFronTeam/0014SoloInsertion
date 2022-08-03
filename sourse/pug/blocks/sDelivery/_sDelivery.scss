@@ -576,6 +576,7 @@
 			width: 100%;
 			height: 100%;
 			[fill='#FF8651'] {
+				fill: $primary !important;
 				stroke-dasharray: 100;
 				stroke-dashoffset: 20;
 			}

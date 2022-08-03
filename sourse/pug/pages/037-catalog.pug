@@ -1,0 +1,34 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sHello/_sHello.pug
+include ../blocks/sIcons/_sIcons.pug
+include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sNew/_sNew.pug
+include ../blocks/sBrends/_sBrends.pug
+include ../blocks/sMainCatalog/_sMainCatalog.pug
+
+block variables
+	- let  mainPage= null 
+	- let  bg= '01.png'
+
+block title
+	- let  title= 'Бытовая техника для дома'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+topLine()
+		+top-nav()
+		+brands()
+	+b.page-head--catalog
+		.container
+			+breadcrumb('Главная', 'Каталог')
+			h1!= title
+	+sMainCatalog()
+	//- +sNew()
+	+sBrends()
+	+footer()

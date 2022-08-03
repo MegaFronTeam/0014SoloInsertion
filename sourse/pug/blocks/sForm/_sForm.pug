@@ -111,3 +111,39 @@ mixin sFormNews(data)
 									| Мы безопасно храним данные и никому их не передаём, вот
 									|
 									a(href="#") условия.
+
+mixin sFormAddFile(title, text)
+	// start sForm
+	+b.SECTION.sForm--AddFile.section&attributes(attributes)
+		.container
+			+e.box.bg-wrap
+				//- +pic('dark-bg.png', 'bg', 0).picture-bg
+				//- +e.bg
+				//- 	img(loading="lazy" src="img/@2x/sAbout-bg.png" alt="")
+				+b.section-title
+					h2!= title
+					p!= text
+				+form-wrap()
+					+e.row.row
+						+e.left-col.col-lg-auto
+							+input('Ваше имя', 'text')
+							+input('Ваша электронная почта', 'email')
+						.col-lg
+							+input('Ваше вопрос','textarea')
+						.col-12.m-0
+							+e.addfileWrap
+								p Прикрепить файл
+								+e.wrap
+									<input type="file" class="filepond" name="filepond">
+									+e.content
+										p Нажмите на кнопку или перетащите фото в эту область
+										p до 10 файлов в формате<br>PNG, JPEG, PDF
+						+e.left-col--2.col-lg-auto
+							+e.btn(type="submit") Отправить
+							+e.policy
+								+e.p-txt
+									| Мы безопасно храним данные и никому их не передаём, вот
+									|
+									a(href="#") условия.
+						//- .col-lg
+	// end sForm
