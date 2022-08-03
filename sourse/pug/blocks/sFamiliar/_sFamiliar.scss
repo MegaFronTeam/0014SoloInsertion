@@ -201,6 +201,9 @@
       }
       .section-title {
         margin-bottom: var(--sTPB);
+        @include media-breakpoint-up(md) {
+          padding-top: rem(20);
+        }
         h2 {
           width: auto;
           background-color: transparent;

@@ -208,7 +208,7 @@
 	padding: rem(20) 0;
 	position: absolute;
 	display: block;
-	background: $gray-900;
+	background: $gray-830;
 
 	top: calc(100% - var(--brands-h));
 	left: 0;
@@ -254,7 +254,7 @@
 		}
 	}
 	&__right-col {
-		border-bottom: 1px solid $gray-910;
+		border-bottom: 1px solid $body-color;
 		padding-bottom: rem(18);
 		margin-bottom: rem(18);
 	}
@@ -262,10 +262,11 @@
 	}
 	&__links {
 		a {
-			font-size: rem(18);
+			font-size: rem(14);
 			margin-bottom: rem(10);
 			color: $white;
 			line-height: 1.35;
+			font-weight: 600;
 
 			text-decoration: none;
 			display: block;
@@ -275,7 +276,7 @@
 	}
 	&__prod-item {
 		padding: rem(12) 0;
-		border-bottom: 1px solid $gray-910;
+		border-bottom: 1px solid $body-color;
 
 		&:last-child {
 			//margin-bottom: 0;
@@ -306,7 +307,8 @@
 	}
 	&__i-name {
 		text-decoration: none;
-		font-size: rem(17);
+		font-size: rem(14);
+		font-weight: 600;
 		line-height: 1.5;
 		color: $white;
 	}
@@ -316,14 +318,15 @@
 	}
 	&__price {
 		&--old {
-			font-size: rem(14);
+			font-size: rem(12);
 			text-decoration-line: line-through;
-			color: $orange;
+			color: $primary;
 			margin-right: rem(12);
 		}
 		&--curr {
-			font-size: rem(17);
+			font-size: rem(14);
 			color: $white;
+			font-weight: 600;
 		}
 	}
 	&__chevron-col {
