@@ -32,7 +32,8 @@
 
 			color: $white;
 			&:hover{
-				color: $gray-115;
+				// color: $gray-115;
+				font-weight: 700;
 			}
 		}
 	}
@@ -143,6 +144,7 @@
 		align-items: center;
 		text-decoration: none;
 		color: $white;
+		border-radius: 8px;
 
 		&:hover{
 			color: $gray-115;
@@ -192,7 +194,7 @@
 		padding-top: rem(20);
 	}
 	&__dd-inner{
-		background-color: $white;
+		background-color: $gray-110;
 
 		padding: rem(18) rem(12);
 		@include media-breakpoint-up(sm){
@@ -200,6 +202,7 @@
 		}
 
 		position: relative;
+		border-radius: 10px;
 		&:after{
 			content: '';
 			position: absolute;
@@ -221,9 +224,9 @@
 
 	}
 	&__title{
-		color: $headings-color;
-		font-weight: 500;
-		font-size: rem(18);
+		color: $gray-900;
+		font-weight: 600;
+		font-size: rem(14);
 		line-height: 1.25;
 
 		margin-bottom: rem(20);
@@ -252,17 +255,24 @@
 
 		&--orange{
 			@extend .btn-primary;
+			--bs-btn-font-weight: 600;
+			--bs-btn-font-size: #{rem(14)};
 		}
 		&--out-gray{
 			@extend .btn-outline-light;
-			border-color: $gray-400!important;
+			// border-color: $gray-400!important;
 
 			background-color: transparent!important;
 			&:hover{
 				background-color: $gray-400!important;
 			}
 
-			color: $headings-color!important;
+			// color: $headings-color!important;
+			--bs-btn-font-weight: 600;
+			--bs-btn-font-size: #{rem(14)};
+			--bs-btn-border-color: #{$gray-511};
+			--bs-btn-active-border-color: #{$gray-511};
+			--bs-btn-color: #{$body-color};
 		}
 	}
 	&__{}

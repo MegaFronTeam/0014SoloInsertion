@@ -68,6 +68,9 @@
 
 		color: $gray-110;
 		text-decoration: none;
+		&:hover {
+			color: $yellow;
+		}
 	}
 	&__log{
 		font-size: rem(16);
@@ -75,6 +78,9 @@
 		color: $white;
 
 		text-decoration: none;
+		&:hover {
+			color: $yellow;
+		}
 	}
 
 	&__items-col{
@@ -322,7 +328,10 @@
 		text-decoration: none;
 		font-size: rem(16);
 		line-height: calc(28/16);
-		color: $gray-110;
+		color: #fff;
+		&:hover {
+			color: $yellow;
+		}
 	}
 
 	&__arrow-col{

@@ -776,6 +776,7 @@
 		border: 1px solid $gray-830;
 
 		padding: rem(16);
+		background-color: #fff;
 		border-radius: 10px;
 		@include media-breakpoint-up(sm){
 			padding: rem(16) rem(16) rem(20);
