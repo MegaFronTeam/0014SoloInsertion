@@ -2,7 +2,11 @@
 .sColaboration {
 	--sPT: #{rem(24)};
 	--sPB: #{rem(46)};
-
+	background-color: $gray-110;
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(90)};
+		--sPB: #{rem(90)};
+	}
 	&__row{
 		--bs-gutter-x: #{rem(20)};
 		--bs-gutter-y: #{rem(40)};

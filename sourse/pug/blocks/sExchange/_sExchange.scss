@@ -1,9 +1,8 @@
 // start .sExchange
 .sExchange {
-	--sPT: #{rem(11)};
-	--sPB: #{rem(100)};
+	--sPT: 0;
+	--sPB: #{rem(45)};
 	--sTPB: #{rem(30)};
-
 	&__row{
 		--bs-gutter-x: #{rem(30)};
 		--bs-gutter-y: #{rem(30)};
@@ -17,6 +16,10 @@
 		font-size: rem(20px);
 		line-height: calc(25/20);
 		margin-bottom: rem(35);
+		padding-top: rem(30);
+		@include media-breakpoint-up(lg){
+			padding-top: rem(73);
+		}
 	}
 	&__gray{
 		line-height: calc(22/16);
