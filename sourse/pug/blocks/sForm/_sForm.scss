@@ -438,6 +438,13 @@
 			&--drop-label.filepond--drop-label label {
 				display: none;
 			}
+			&--item {
+				width: 220px;
+				top: 56px;
+				@include media-breakpoint-up(sm) {
+					width: 300px;
+				}
+			}
 		}
 	}
 } // end.sForm
