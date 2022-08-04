@@ -7,7 +7,8 @@ include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sHello/_sHello.pug
 include ../blocks/sIcons/_sIcons.pug
 include ../blocks/sForm/_sForm.pug
-//- include ../blocks/sNew/_sNew.pug
+include ../blocks/sFamiliar/_sFamiliar.pug
+include ../blocks/sNew/_sNew.pug
 include ../blocks/sBrends/_sBrends.pug
 include ../blocks/sMainCatalog/_sMainCatalog.pug
 
@@ -29,6 +30,6 @@ block pagecontent
 			+breadcrumb('Главная', 'Каталог')
 			h1!= title
 	+sMainCatalog()
-	//- +sNew()
+	+sNew().sNew--catalog
 	+sBrends()
 	+footer()

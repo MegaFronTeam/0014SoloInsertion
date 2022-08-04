@@ -62,8 +62,10 @@
 	&__all-link{
 		text-decoration: none;
 		font-size: rem(16);
-		@include media-breakpoint-up(xxl){
+		@include media-breakpoint-up(lg) {
 			padding-left: rem(25);
+		}
+		@include media-breakpoint-up(xxl){
 			background-color: #fff;
 		}
 
@@ -117,6 +119,8 @@
 		border-radius: 10px;
 		border: none;
 		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
+		margin-top: rem(-40);
 		@include media-breakpoint-up(lg) {
 			width: rem(51);
 			height: rem(51);
@@ -177,18 +181,18 @@
 	}
 	&__b-title{
 		color: $white;
-		font-size: rem(32);
 		line-height: 1.2;
 		font-weight: 600;
+		font-size: rem(20);
 		@include media-breakpoint-up(lg) {
-			font-size: rem(20);
+			font-size: rem(32);
 		}
 		span {
-			font-size: rem(50);
+			font-size: rem(32);
 			font-weight: 700;
 			text-transform: uppercase;
 			@include media-breakpoint-up(lg) {
-				font-size: rem(32);
+				font-size: rem(50);
 			}
 		}
 	}
@@ -260,6 +264,37 @@
 		&--new{
 			font-size: rem(25);
 			color: $gray-200;
+		}
+	}
+	&--catalog {
+		position: relative;
+		z-index: 1;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: rem(626);
+			background-color: $gray-110;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.sNew {
+			&__slider-wrap {
+				padding-bottom: rem(45);
+				margin-bottom: rem(45);
+				@include media-breakpoint-up(lg) {
+					padding-bottom: rem(80);
+					margin-bottom: rem(90);
+				}
+			}
+			&__all-link {
+				background-color: $gray-110;
+			}
+		}
+		.section-title h2 {
+			background-color: $gray-110;
 		}
 	}
 	&__{}
