@@ -112,7 +112,7 @@ mixin sFormNews(data)
 									|
 									a(href="#") условия.
 
-mixin sFormAddFile(title, text)
+mixin sFormAddFile(title, text, exchange, warranty, base=false)
 	// start sForm
 	+b.SECTION.sForm--AddFile.section&attributes(attributes)
 		.container
@@ -126,10 +126,28 @@ mixin sFormAddFile(title, text)
 				+form-wrap()
 					+e.row.row
 						+e.left-col.col-lg-auto
-							+input('Ваше имя', 'text')
-							+input('Ваша электронная почта', 'email')
+							if exchange
+								+input('Номер заказа', 'text')
+								+input('Ваше имя', 'text')
+								+input('Ваш телефон', 'tel')
+								+input('Эл. почта', 'email')
+							if warranty
+								+input('Ваше имя', 'text')
+								+input('Ваша фамилия', 'text')
+								+input('Ваше отчество', 'text')
+								+input('Ваш телефон', 'tel')
+								+input('Эл. почта', 'email')
+								+input('Номер заказа', 'text')
+							if base
+								+input('Ваше имя', 'text')
+								+input('Ваша электронная почта', 'email')
 						.col-lg
-							+input('Ваше вопрос','textarea')
+							if exchange
+								+input('Укажите причину возврата','textarea')
+							if warranty
+								+input('Комментарий','textarea')
+							if base
+								+input('Ваше вопрос','textarea')
 						.col-12.m-0
 							+e.addfileWrap
 								p Прикрепить файл

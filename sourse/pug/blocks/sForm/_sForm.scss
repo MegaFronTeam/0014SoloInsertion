@@ -353,6 +353,9 @@
 	}
 	&--AddFile {
 		.form-wrap {
+			@include media-breakpoint-up(lg) {
+				max-width: rem(1152);
+			}
 			&__addfileWrap {
 				max-width: rem(348);
 				padding-top: rem(28);
@@ -372,6 +375,17 @@
 					&:not(:last-child) {
 						color: $gray-900;
 						margin-bottom: rem(8);
+					}
+				}
+			}
+			&__input-wrap {
+				&:last-child {
+					height: 100%;
+					label {
+						height: 100%;
+						textarea {
+							height: 100%;
+						}
 					}
 				}
 			}
@@ -419,6 +433,9 @@
 				border-radius: 10px
 			}
 			&--browser {
+				display: none;
+			}
+			&--drop-label.filepond--drop-label label {
 				display: none;
 			}
 		}
