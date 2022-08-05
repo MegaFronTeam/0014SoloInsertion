@@ -240,7 +240,7 @@ mixin sProdCardTag(tagName, txt)
 				+e.share-toggle
 					if tagName
 						+e.icon
-							img(loading="lazy" src=`img/svg/${tagName}.svg` alt="")
+							img(loading="lazy" src=`img/svg/${tagName}.svg` alt="").img-svg-js
 					span=txt
 				+e.share-dropdown
 					<script src="https://yastatic.net/share2/share.js"></script>
@@ -249,7 +249,7 @@ mixin sProdCardTag(tagName, txt)
 			+e.tag(href="#")
 				if tagName
 					+e.icon
-						img(loading="lazy" src=`img/svg/${tagName}.svg` alt="")
+						img(loading="lazy" src=`img/svg/${tagName}.svg` alt="").img-svg-js
 				span=txt
 
 mixin sProdCardSlide(imgNum)

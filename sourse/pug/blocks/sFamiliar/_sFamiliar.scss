@@ -355,6 +355,7 @@
 // end.sFamiliar
 
 .prod-item {
+  @include mt;
   min-height: 100%;
   background-color: $white;
 
@@ -365,7 +366,7 @@
   &:hover {
     --op: 1;
     // overflow: visible;
-
+    box-shadow: none;
     img {
       // opacity: 0;
     }

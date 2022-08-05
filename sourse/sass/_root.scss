@@ -42,8 +42,19 @@
 
   --fixed-foot-nav-h: 70px;
   --header-height: 205px;
-  --header-real-height: 205px;
-
+  --header-real-height: 181px!important;
+  @include media-breakpoint-up(sm) {
+    --header-real-height: 194px !important;
+  }
+  @include media-breakpoint-up(md) {
+    --header-real-height: 123px !important;
+  }
+  @include media-breakpoint-up(lg) {
+    --header-real-height: 257px !important;
+  }
+  @include media-breakpoint-up(xxl) {
+    --header-real-height: 279px !important;
+  }
   //-
   --l-shift-x: 0px;
   @include media-breakpoint-up(xxl){

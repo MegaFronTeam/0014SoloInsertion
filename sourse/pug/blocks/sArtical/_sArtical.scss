@@ -222,6 +222,7 @@
 				}
 			}
 			th {
+				@extend .h6;
 				position: relative;
 				padding: rem(18) rem(6) rem(18) rem(28);
 				font-weight: 700;
@@ -248,7 +249,7 @@
 			}
 			td {
 				vertical-align: baseline;
-				padding: rem(15) rem(27);
+				padding: rem(15) rem(15);
 				color: $body-color;
 				@include media-breakpoint-up(lg) {
 					padding: rem(18) rem(39);

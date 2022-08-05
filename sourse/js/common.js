@@ -455,7 +455,8 @@ function eventHandler() {
   }); //
 
   let prodCardThumb = new Swiper('.sProdCard-thumb-js', {
-    slidesPerView: 'auto'
+    slidesPerView: 'auto',
+    spaceBetween: 3,
   });
   let prodCardSlider = new Swiper('.sProdCard-slider-js', {
     spaceBetween: 30,
@@ -604,15 +605,18 @@ function eventHandler() {
 
   $('.catalog-btn-js').click(function () {
     $('.catalog-dd--js').toggleClass('active');
+    $('body').toggleClass('fixed');
     JSCCommon.closeMenu();
   });
   document.addEventListener('click', function () {
     if (!event.target.closest('.catalog-dd') && !event.target.closest('.catalog-btn-js')) {
       $('.catalog-dd--js').removeClass('active');
+      $('body').removeClass('fixed');
     }
   });
   $('.catalog-close-btn-js').click(function () {
     $('.catalog-dd--js').removeClass('active');
+    $('body').removeClass('fixed');
   }); //.close-mob-search-js
   //.mob-search-js
   //.mob-search-btn-js

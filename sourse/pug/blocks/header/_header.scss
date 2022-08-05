@@ -62,15 +62,25 @@
 	height: calc(100vh - var(--header-real-height));
 	top: calc(100% +  var(--top-s));
 	--top-s: #{rem(45px)};
-	@include media-breakpoint-up(xl) {
+	@include media-breakpoint-up(lg) {
 		--top-s: #{rem(57px)};
 		height: auto;
-		max-height: calc(100vh - var(--header-real-height));
+		// max-height: calc(100vh - var(--header-real-height));
 	}
 
 	overflow-y: auto;
 	z-index: 1000;
-
+	.tabs {
+		&__content {
+			// height: calc(100vh - var(--header-real-height));
+			overflow-y: auto;
+			overflow-x: hidden;
+			@include media-breakpoint-up(lg) {
+				height: auto;
+				max-height: calc(100vh - var(--header-real-height));
+			}
+		}
+	}
 	&__close-btn {
 		cursor: pointer;
 		display: flex;
@@ -156,6 +166,13 @@
 	}
 	//
 	&__caption-col {
+		// height: calc(100vh - var(--header-real-height));
+    overflow-x: hidden;
+    overflow-y: auto;
+		@include media-breakpoint-up(lg) {
+			height: auto;
+			max-height: calc(100vh - var(--header-real-height));
+		}
 		@include media-breakpoint-up(lg) {
 			border-right: 1px solid rgba($white, 0.2);
 		}

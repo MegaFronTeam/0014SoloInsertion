@@ -234,7 +234,7 @@ mixin longProdDeliveryItem(key, val)
 mixin longProdAction(imgNum)
 	.col-auto
 		+e.action(href="#")
-			img(loading="lazy" src=`img/svg/long-prod-action-${imgNum}.svg` alt="")
+			img(loading="lazy" src=`img/svg/long-prod-action-${imgNum}.svg` alt="").img-svg-js
 
 mixin sCatalogTag(txt)
 	.col-auto
@@ -297,14 +297,14 @@ mixin sidebarDdItem(data)
 			if block
 				block
 			else
-				+sidebarChbItem('Кредит/рассрочка', '113')(checked)
-				+sidebarChbItem('Акция', '226')
-				+sidebarChbItem('Красный', '653', 'red')
-				+sidebarChbItem('Green', '653', 'green')
-				+sidebarChbItem('Green', '653', 'url(img/@2x/cat-card-1.png)')
+				+sidebarChbItem('Smeg', '10')(checked)
+				+sidebarChbItem('Neff', '2')
+				+sidebarChbItem('Asko', '4', 'red')
+				+sidebarChbItem('Borsch', '200', 'green')
+				+sidebarChbItem('Electrolux', '1', 'url(img/@2x/cat-card-1.png)')
 				.rm-hidden-js
-					+sidebarChbItem('lalal', '1130')
-					+sidebarChbItem('lalal', '1130')
+					+sidebarChbItem('Borsch', '200')
+					+sidebarChbItem('Borsch', '200')
 				+e.read-more.rm-btn-js
 					span Показать еще
 					span Свернуть

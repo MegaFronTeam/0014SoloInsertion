@@ -69,7 +69,7 @@
 	--wb-shift-x: #{rem(15)};
 	@include media-breakpoint-up(sm){
 		--wb-pt: #{rem(20)};
-		--wb-shift-x: #{rem(24)};
+		--wb-shift-x: #{rem(18)};
 	}
 	@include media-breakpoint-up(xxl){
 		--wb-shift-x: #{rem(30)};
@@ -679,7 +679,7 @@
 			--key-w: 100%;
 			--val-w: 100%;
 			@include media-breakpoint-up(sm){
-				--key-w: 40%;
+				--key-w: 30%;
 				--val-w: 60%;
 			}
 			@include media-breakpoint-up(xl){

@@ -99,9 +99,9 @@
 	&__white-box{
 		background-color: $white;
 
-		@include media-breakpoint-up(base){
-			margin: 0 calc(var(--wb-shift-x)*-1);
-		}
+		// @include media-breakpoint-up(base){
+		// 	margin: 0 calc(var(--wb-shift-x)*-1);
+		// }
 	}
 	&__col{
 		&--left{
@@ -494,6 +494,7 @@
 			background-color: $primary!important;
 			.icon{
 				// stroke: $white;
+				color: #fff;
 			}
 		}
 	}

@@ -30,8 +30,10 @@
 .certGuarteesI{
 	max-width: 323px;
 	font-size: rem(16);
+	margin-bottom: 36px;
 	@include media-breakpoint-up(lg) {
 		position: relative;
+		margin-bottom: 0;
 		&:before {
 			content: '';
 			position: absolute;
@@ -50,7 +52,7 @@
 		border-radius: 10px;
 		background-color: $primary;
 		padding: 17px;
-		margin-bottom: 36px;
+		margin-bottom: 13px;
 	}
 }
 

@@ -8,7 +8,8 @@ mixin sMainCatalog(data)
 						+e.item
 							p!= text
 							+e.img-wrap
-								+img(`img/@2x/catalog-img-${i}.png`)
+								.img-wrap-center
+									+img(`img/@2x/catalog-img-${i}.png`)
 						+e.hidden-content
 							p!= text
 							+e.link

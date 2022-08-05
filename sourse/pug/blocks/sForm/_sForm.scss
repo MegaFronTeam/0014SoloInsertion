@@ -17,7 +17,7 @@
 		.sForm {
 			&__box {
 				@include media-breakpoint-up(xxl) {
-					padding: 58px 23px 84px 72px;
+					padding: 58px 23px 84px 25px;
 				}
 			}
 		}
@@ -49,8 +49,11 @@
 		border-radius: 10px;
 
 		padding: rem(30) rem(30) rem(45);
-		left: calc(-1 * (100vw - 100%) * 0.5);
-		width: 100vw;
+		@include media-breakpoint-between(sm, lg) {
+			padding: rem(30) rem(30) rem(92.175);
+		}
+		// left: calc(-1 * (100vw - 100%) * 0.5);
+		// width: 100vw;
 		overflow: hidden;
 		&:before {
 			content: '';
@@ -69,7 +72,7 @@
 		@include media-breakpoint-up(lg) {
 			left: unset;
 			width: 100%;
-			padding: rem(110) rem(40) rem(95) rem(110);
+			padding: rem(110) rem(40) rem(95) rem(40);
 		}
 
 		//
@@ -132,7 +135,7 @@
 				justify-content: space-between;
 				flex-direction: column;
 				margin-top: rem(20);
-				@include media-breakpoint-up(sm) {
+				@include media-breakpoint-up(md) {
 					align-items: center;
 					flex-direction: row;
 				}
@@ -172,7 +175,6 @@
 			font-weight: 700;
 		}
 		&__policy {
-			max-width: rem(253);
 			color: $body-color;
 			margin-top: rem(20);
 			font-size: rem(14);
@@ -180,6 +182,9 @@
 			padding-left: rem(26);
 			@include media-breakpoint-up(lg) {
 				min-height: rem(53);
+			}
+			@include media-breakpoint-up(md) {
+				max-width: rem(253);
 			}
 			&--mh0 {
 				@include media-breakpoint-up(lg) {
@@ -288,7 +293,7 @@
 				padding: rem(55);
 			}
 			@include media-breakpoint-up(xxl) {
-				padding: rem(45) rem(55) rem(45) rem(80);
+				padding: rem(45) rem(55) rem(45) rem(55);
 			}
 		}
 		.sForm__image {
@@ -398,6 +403,7 @@
 				width: rem(100);
 				height: rem(100) !important;
 				margin-right: rem(20);
+				z-index: 1;
 				cursor: pointer;
 				&::before {
 					@include a-cent();
@@ -440,8 +446,10 @@
 			}
 			&--item {
 				width: 220px;
-				top: 56px;
+				z-index: 2;
+				top: 46px;
 				@include media-breakpoint-up(sm) {
+					top: 200px;
 					width: 300px;
 				}
 			}

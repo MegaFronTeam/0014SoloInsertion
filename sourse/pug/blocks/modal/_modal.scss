@@ -76,7 +76,7 @@
 }
 
 .modal-callback{
-	max-width: rem(424);
+	max-width: rem(700);
 	padding: rem(36) rem(20)!important;
 	@include media-breakpoint-up(sm){
 		padding: rem(50) rem(20) rem(40) !important;
@@ -90,7 +90,7 @@
 	}
 
 	.form-wrap{
-		max-width: 313px;
+		// max-width: 313px;
 		margin: 0 auto;
 		&__title{
 			h2{
@@ -114,6 +114,7 @@
 			padding: rem(20) rem(30);
 			font-size: 18px;
 			line-height: 1.5;
+			// border-top-width: 1px;
 		}
 		&__radio{
 			margin-bottom: rem(24);
@@ -122,6 +123,9 @@
 			margin-bottom: rem(20);
 			&:last-child{
 				margin-bottom: 0;
+			}
+			.circle {
+				border-color: $primary
 			}
 		}
 		&__btn{
@@ -283,6 +287,9 @@
 		padding-top: rem(24)!important;
 		padding-bottom: rem(24)!important;
 	}
+}
+.fancybox__content :focus:not(.carousel__button.is-close) {
+	outline: none;
 }
 .modal-city{
 	//@include mt();
