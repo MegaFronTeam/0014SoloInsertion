@@ -525,12 +525,22 @@
 		}
 		.icon {
 			font-size: rem(24);
-			color: $gray-511;
+			// color: $gray-511;
 			margin-right: rem(10);
 		}
 	}
 	&__row{
 		--bs-gutter-y: #{rem(30)};
+	}
+	&__clear {
+		&:hover {
+			color: $red;
+		}
+	}
+	&__add-all {
+		&:hover {
+			color: $primary;
+		}
 	}
 	&__bonus {
 		padding: rem(20) rem(25);

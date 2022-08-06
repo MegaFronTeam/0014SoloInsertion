@@ -30,11 +30,11 @@ mixin sPersonalCab(data)
 							+e.H2.sub-title--2=data.subTitle
 							+e.tags-row.row
 								.col-auto
-									a(href="#") 
+									+e.clear(href="#") 
 										+icon('delete')
 										| Очистить список
 								.col-auto
-									a(href="#") 
+									+e.add-all(href="#") 
 										+icon('basket-small')
 										| Добавить все в корзину
 						if data.personalData
