@@ -18,7 +18,6 @@
 1. <https://megafronteam.github.io/0014SoloInsertion/public/08-exchange.html>
 1. <https://megafronteam.github.io/0014SoloInsertion/public/09-warranty.html>
 1. <https://megafronteam.github.io/0014SoloInsertion/public/02-colaboration.html>
-1. <https://megafronteam.github.io/0014SoloInsertion/public/037-catalog.html>
 
 #### Личный кабинет
 1. <https://megafronteam.github.io/0014SoloInsertion/public/018-lc-orders.html>

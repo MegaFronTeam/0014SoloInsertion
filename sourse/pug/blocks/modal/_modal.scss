@@ -553,7 +553,7 @@
 			font-size: rem(20);
 			line-height: 1.35;
 			color: $black;
-			padding: rem(4) 0;
+			// padding: rem(4) 0;
 			box-shadow: none!important;
 
 			border: none!important;
@@ -572,7 +572,8 @@
 		&__input{
 			border-width: 1px;
 			color: $black;
-			padding: rem(19) rem(22);
+			// padding: rem(19) rem(22);
+			border-radius: 0;
 
 			font-size: rem(18);
 			line-height: calc(26/18);

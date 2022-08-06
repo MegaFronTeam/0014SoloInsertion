@@ -418,6 +418,26 @@
 					height: 32px;
 					z-index: 12;
 				}
+				// &::after {
+				// 	content: '';
+				// 	position: absolute;
+				// 	display: block;
+				// 	height: rem(100);
+				// 	width: rem(328);
+				// 	top: 0;
+				// 	left: 0;
+				// 	background-color: transparent;
+				// }
+			}
+			&--filepond--browser-dp23ntyz2, &--credits {
+				display: none !important;
+			}
+			&--drop-label {
+				width: rem(100);
+				height: rem(100) !important;
+				background-color: #fff;
+				border-radius: 10px;
+				position: relative;
 				&::after {
 					content: '';
 					position: absolute;
@@ -427,16 +447,8 @@
 					top: 0;
 					left: 0;
 					background-color: transparent;
+					z-index: 123;
 				}
-			}
-			&--filepond--browser-dp23ntyz2, &--credits {
-				display: none !important;
-			}
-			&--drop-label {
-				width: rem(100);
-				height: rem(100) !important;
-				background-color: #fff;
-				border-radius: 10px
 			}
 			&--browser {
 				display: none;

@@ -338,7 +338,7 @@
 			margin-bottom: rem(5);
 			@include media-breakpoint-up(lg){
 				margin-bottom: 0;
-				padding-right: rem(20);
+				padding-right: rem(10);
 				width: var(--title-w);
 			}
 			@include media-breakpoint-only(lg) {
@@ -358,7 +358,7 @@
 			line-height: calc(26/18);
 
 			&[type="date"]{
-				padding-right: rem(30);
+				padding-right: rem(20);
 			}
 
 			&.checked{
@@ -548,13 +548,13 @@
 				}
 			}
 			span {
-				font-size: rem(25);
+				// font-size: rem(25);
 				font-weight: 600;
 				margin-right: rem(7);
 				vertical-align: middle;
+				font-size: rem(56);
 				@include media-breakpoint-up(lg) {
 					margin-right: rem(15);
-					font-size: rem(56);
 				}
 			}
 		}
