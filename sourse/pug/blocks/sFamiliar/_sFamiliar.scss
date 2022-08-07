@@ -83,6 +83,9 @@
           opacity: 0;
         }
       }
+      & > .swiper > .swiper-wrapper {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -266,7 +269,7 @@
     }
 
     .swiper-wrapper {
-
+      
     }
 
     // .swiper-slide {
