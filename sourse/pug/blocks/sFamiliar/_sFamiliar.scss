@@ -285,6 +285,7 @@
 
   .swiper-slide {
     height: auto;
+    max-width: rem(433);
     // .prod-item{
     // 	display: flex;
     // 	flex-direction: column;
@@ -293,6 +294,11 @@
     // 		flex-grow: 1;
     // 	}
     // }
+    &:first-child {
+      @include media-breakpoint-up(xl) {
+        opacity: 0;
+      }
+    }
   }
 
   //.prod-item__chars {
