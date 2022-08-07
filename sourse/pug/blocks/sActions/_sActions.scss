@@ -58,11 +58,11 @@
 		background-color: $gray-830;
 		overflow: hidden;
 
-		padding: rem(30) rem(20);
-		@include media-breakpoint-up(sm){
-			// padding: rem(40) rem(24);
-			padding: rem(30) rem(40);
-		}
+		// padding: rem(30) rem(20);
+		// @include media-breakpoint-up(sm){
+		// 	// padding: rem(40) rem(24);
+		// 	padding: rem(30) rem(40);
+		// }
 		@include media-breakpoint-up(xl){
 		}
 
@@ -76,11 +76,11 @@
 		}
 		img {
 			@include mt;
-			position: absolute;
+			// position: absolute;
 			max-width: rem(665);
 			height: auto;
-			right: 0;
-			bottom: 0;
+			// right: 0;
+			// bottom: 0;
 			z-index: -1;
 		}
 	}
