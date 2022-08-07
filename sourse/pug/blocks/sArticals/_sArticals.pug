@@ -7,21 +7,23 @@ mixin sArticals(data)
 				+sArticalsItem(2, 'Как выбрать тепловую пушку', 'Как выбрать<br>тепловую пушку')
 				+sArticalsItem(3, 'Уход за триммером', 'Уход за<br>триммером')
 				+sArticalsItem(4, 'Виды и характеристики бензопил', 'Виды и характеристики<br>бензопил')
-				+sArticalsItem(5, 'Как выбрать тепловую пушку', 'Садовых<br>пылесосов')
+				+sArticalsItem(5, 'Как выбрать тепловую пушку', 'Садовых<br>пылесосов', true)
 				+sArticalsItem(6, 'Как выбрать сварочный аппарат', 'Как выбрать<br>сварочный аппарат')
 			+e.pugin-cont
 				+pugin()
 
 	// end sArticals
 
-mixin sArticalsItem(imgNum, title, subtitle)
+mixin sArticalsItem(imgNum, title, subtitle, rating)
 	+e.col.col-sm-6.col-lg-4
-		+sArticalsItemSingle(imgNum, title, subtitle)
+		+sArticalsItemSingle(imgNum, title, subtitle, rating)
 
-mixin sArticalsItemSingle(imgNum, title, subtitle)
+mixin sArticalsItemSingle(imgNum, title, subtitle, rating)
 	+b.sArticalsitem
 		+e.img(href="#")
 			img(loading="lazy" src=`img/@2x/sArticals-${imgNum}.jpg` alt="")
+			if rating
+				+e.rating Рейтинг
 			+e.date!= subtitle
 		+e.title(href="#")=title
 		//- +e.descr Бензиновый мотобур относится к узкоспециализированным инструментам. Он применяется для бурения почвы и льда. Само по себе устройство не ново, но тем не менее на современном рынке

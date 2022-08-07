@@ -157,21 +157,35 @@
 		min-height: rem(330);
 		display: flex;
 		align-items: stretch;
-	}
-	&__b-img{
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-
-		img{
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+		img {
+			@include mt;
+			position: absolute;
+			max-width: rem(665);
+			height: auto;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
 		}
 	}
+	// &__b-img{
+	// 	position: absolute;
+	// 	z-index: -1;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+
+	// 	img{
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		object-fit: cover;
+	// 	}
+	// }
 	&__content{
 		display: flex;
 		flex-direction: column;

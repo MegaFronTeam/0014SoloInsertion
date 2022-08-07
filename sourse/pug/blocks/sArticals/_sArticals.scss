@@ -57,6 +57,16 @@
 				}
 			}
 		}
+		&:nth-child(5) {
+			.sArticalsitem__date {
+				top: 66px;
+				border-radius: 0 0 0 5px;
+				&:before {
+					background-color: #6FBD13;
+					background-image: none;
+				}
+			}
+		}
 	}
 } // end.sArticals
 
@@ -70,6 +80,14 @@
 			img {
 				transform: scale(1.1);
 			}
+		}
+		.sArticalsitem__rating {
+			&:before {
+				opacity: 0;
+			}
+		}
+		.sArticalsitem__title {
+			color: $primary;
 		}
 	}
 	&__img{
@@ -86,7 +104,7 @@
 		background: rgba(0, 0, 0, 0.5);
 		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 		backdrop-filter: blur(15px);
-		border-radius: 5px 0px 0px 5px;
+		border-radius: 6px 0px 0px 6px;
 
 		// max-width: rem(153);
 		width: auto;
@@ -116,9 +134,6 @@
 
 		color: $gray-900;
 		font-weight: 600;
-		&:hover{
-			color: $primary;
-		}
 
 		margin-bottom: 0;
 	}
@@ -133,5 +148,36 @@
 		text-decoration: none;
 		display: block;
 		margin-top: auto;
+	}
+	&__rating {
+		font-family: 'Raleway';
+		position: absolute;
+		top: 28px;
+		right: 0;
+		font-size: rem(20);
+		font-weight: 600;
+		line-height: 1.5em;
+		min-width: 9.375rem;
+		padding: rem(4) rem(10) rem(4) rem(25);
+		color: #fff;
+		background-color: #6CBB10;
+		border-radius: 5px 0px 0px 0px;
+		z-index: 10;
+		@include media-breakpoint-down(md) {
+			top: 33px;
+		}
+		&:before {
+			@include mt;
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+			border-radius: 5px 0px 0px 0px;
+			z-index: -1;
+			top: 0;
+			left: 0;
+		}
 	}
 }
