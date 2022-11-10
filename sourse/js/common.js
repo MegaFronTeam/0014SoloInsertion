@@ -267,7 +267,7 @@ const JSCCommon = {
   },
 
   imgToSVG() {
-    $('img.img-svg-js, .sThanks__wrap img.success').each(function () {
+    $('img.img-svg-js, .sThanks__wrap img.success, .sIcons__img img').each(function () {
       var $img = $(this);
       var imgClass = $img.attr('class');
       var imgURL = $img.attr('src');

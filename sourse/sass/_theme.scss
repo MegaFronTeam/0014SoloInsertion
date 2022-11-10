@@ -100,4 +100,13 @@
 			--bs-btn-disabled-border-color: var(--bs-primary);
 			--bs-gradient: none;
 	}
+	.sIcons__img svg{
+		[stop-color="#C9DE5E"],
+		[stop-color="#6CBB10"]{
+			stop-color: var(--bs-primary) !important;
+		}
+		[fill="#FFC701"]{
+			fill: #DCDCDC !important;
+		}
+	}
 }
