@@ -95,14 +95,14 @@
 		}
 		p {
 			text-transform: uppercase;
-			color: $orange;
+			color: var(--bs-primary);
 			font-size: rem(18);
 			margin-bottom: 0;
 		}
 	}
 	&__bank-name {
 		text-transform: uppercase;
-		color: $orange;
+		color: var(--bs-primary);
 		font-size: rem(18);
 		margin-bottom: rem(24);
 		@include media-breakpoint-up(lg) {

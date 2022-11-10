@@ -19,7 +19,7 @@
 			max-width: rem(264);
 		}
 		span {
-			color: $orange;
+			color: var(--bs-primary);
 		}
 	}
 	&__col {

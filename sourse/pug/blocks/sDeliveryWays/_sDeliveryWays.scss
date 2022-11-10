@@ -24,11 +24,11 @@
 		// border-bottom: 1px solid $gray-280;
 
 		&.active{
-			--h-col: #{$primary};
+			--h-col: var(--bs-primary);
 			--chevron-rotate: 180deg;
 			svg {
 				path[fill="#4C9900"] {
-					fill: #4C9900;
+					fill: var(--bs-primary-active, #4C9900);
 				}
 			}
 		}
@@ -147,7 +147,7 @@
 		p{
 			&:before{
 				content: '*';
-				color: $primary;
+				color: var(--bs-primary);
 				margin-right: 1px;
 			}
 			margin-bottom: 0;
@@ -205,7 +205,7 @@
 		}
 
 		font-size: rem(17);
-		color: $primary;
+		color: var(--bs-primary);
 		@include media-breakpoint-up(md){
 			color: $headings-color;
 			font-size: rem(18);
@@ -307,7 +307,7 @@
 	&__map{
 		height: rem(415);
 		position: relative;
-
+		& > iframe,
 		& > ymaps{
 			position: absolute!important;
 			top: 0!important;

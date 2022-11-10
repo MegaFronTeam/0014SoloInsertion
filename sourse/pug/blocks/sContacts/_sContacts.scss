@@ -81,7 +81,7 @@
 		line-height: calc(26/16);
 		color: $body-color;
 		&:hover{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__mail{
@@ -109,7 +109,7 @@
 		font-size: rem(14px);
 		line-height: calc(20/14);
 		text-transform: uppercase;
-		color: $primary;
+		color: var(--bs-primary);
 		&:hover{
 			color: $body-color;
 		}
@@ -146,7 +146,7 @@
 		font-size: rem(14);
 		line-height: calc(26/14);
 		margin-bottom: rem(3);
-		color: $primary;
+		color: var(--bs-primary);
 
 		&:after{
 			content: '';
@@ -156,7 +156,8 @@
 			width: rem(30);
 			height: rem(16);
 
-			background-image: url(../img/svg/long-arrow-r.svg);
+			// background-image: url(../img/svg/long-arrow-r.svg);
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='8' viewBox='0 0 30 8' fill='none'%3E%3Cpath d='M26.29 7L29.29 4L26.29 1' stroke='#{$primary}' stroke-linecap='square'/%3E%3Cline x1='29.29' y1='4.09177' x2='0.446007' y2='4.09176' stroke='#{$primary}'/%3E%3C/svg%3E");
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;

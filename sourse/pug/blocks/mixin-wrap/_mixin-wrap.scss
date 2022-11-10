@@ -123,9 +123,9 @@
 		//box-shadow: none;
 
 		border: none;
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		&:hover{
-			background-color: darken($primary, 6);
+			background-color: var(--bs-primary-hover);
 		}
 		transition: background-color .3s ease-in-out;
 
@@ -156,7 +156,7 @@
 		}
 	}
 	.irs-bar{
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		height: 2px;
 		top: 28px;
 	}

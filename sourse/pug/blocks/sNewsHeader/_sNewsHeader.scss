@@ -63,7 +63,7 @@
 		}
 		&:hover {
 			h3 {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 		&:nth-child(1) {
@@ -120,11 +120,11 @@
 			margin-bottom: 0;
 			.icon {
 				// fill: none;
-				// stroke: $primary;
+				// stroke: var(--bs-primary);
 				// stroke-width: 3px;
 				font-size: inherit;
 				background: white;
-				fill: $primary;
+				fill: var(--bs-primary);
 				border-radius: 20%;
 				vertical-align: bottom;
 			}

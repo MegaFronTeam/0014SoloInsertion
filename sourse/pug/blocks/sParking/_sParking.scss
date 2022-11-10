@@ -10,7 +10,7 @@
 		display: block;
 		width: 100%;
 		height: 12px;
-		background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+		background: var(--line-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 		opacity: .5;
 		left: 0;
 		top: 0;
@@ -24,7 +24,7 @@
 		}
 	}
 	&__icon {
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		display: inline-block;
     padding: 19px;
     border-radius: 10px;
@@ -52,7 +52,7 @@
 			position: absolute;
 			width: rem(420);
 			height: 1px;
-			background-color: $primary;
+			background-color: var(--bs-primary);
 			left: rem(-295px);
 			z-index: -1;
 		}

@@ -267,7 +267,7 @@ const JSCCommon = {
   },
 
   imgToSVG() {
-    $('img.img-svg-js').each(function () {
+    $('img.img-svg-js, .sThanks__wrap img.success').each(function () {
       var $img = $(this);
       var imgClass = $img.attr('class');
       var imgURL = $img.attr('src');
@@ -1127,9 +1127,13 @@ function eventHandler() {
   $('.dropdown__btn').click(function () {
     $(this).parent().toggleClass( "active" );
     $(this).siblings('.dropdown__content').slideToggle();
+    body.innerHTML
   });
 
   $('.filepond').filepond();
+
+
+
 }
 
 

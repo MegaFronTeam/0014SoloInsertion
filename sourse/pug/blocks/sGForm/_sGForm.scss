@@ -22,7 +22,7 @@
 			display: block;
 			width: 100%;
 			height: 20px;
-			background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+			background: var(--line-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 			opacity: .5;
 			left: 0;
 			top: 0;
@@ -188,7 +188,7 @@
 		--bs-btn-border-width: 0;
 		--bs-btn-hover-bg: transparent;
 		--bs-btn-active-bg: transparent;
-		--bs-btn-hover-color: #{$primary};
+		--bs-btn-hover-color:var(--bs-primary);
 		position: relative;
 		padding-right: rem(48);
 		&::after {

@@ -71,10 +71,12 @@
 	}
 	&__number {
 		@include mt;
-		color: $gray-550;
+		&:not(:hover) {
+			color: $gray-550;
+		}
 		text-decoration: none;
 		&:hover {
-			color: $orange;
+			// color: var(--bs-primary);
 		}
 	}
 	h5 {

@@ -96,7 +96,7 @@
 				text-decoration: none;
 				font-weight: 600;
 				font-size: rem(20);
-				color: $orange;
+				color: var(--bs-primary);
 			}
 		}
 	}
@@ -189,7 +189,7 @@
 				text-decoration: none;
 				font-weight: 600;
 				font-size: rem(20);
-				color: $orange;
+				color: var(--bs-primary);
 			}
 		}
 		&__icon-list {

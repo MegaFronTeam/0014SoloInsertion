@@ -2,7 +2,7 @@
 .topLine {
 	padding: rem(10) 0;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-	background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+	background: var(--top-line-bg, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 	position: relative;
 	z-index: 11;
 	&__row{
@@ -69,7 +69,7 @@
 		}
 		&:hover {
 			.icon-dots {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 			.topLine__workTime-content {
 				// display: block;
@@ -128,7 +128,7 @@
 			position: absolute;
 			top: rem(42);
 			font-size: rem(12);
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 

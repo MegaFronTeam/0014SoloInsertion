@@ -14,9 +14,8 @@
 		<link rel="stylesheet" href="libs/filepond/filepond.min.css"/>
 		<link rel="stylesheet" href="libs/ion-rangeslider/css/ion.rangeSlider.min.css"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
-		<link href="css/custom.css" rel="stylesheet"/>
 	</head>
-	<body class="new-page" data-bg="015.png">
+	<body class="new-page theme-miele" data-bg="015.png">
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js d-xl-none">
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
@@ -106,7 +105,10 @@
 								<div class="search__input-wrap form-group"><input class="search__input form-control" name="text" type="text" placeholder=""/><span class="search__input-title"></span>
 								</div>
 								<!-- +e.input-wrap-->
-								<button class="search__s-btn" type="button"><img loading="lazy" src="img/svg/zoom.svg" alt=""/>
+								<button class="search__s-btn" type="button">
+									<svg class="icon icon-zoom ">
+										<use xlink:href="img/svg/sprite.svg#zoom"></use>
+									</svg>
 								</button>
 							</div>
 							<div class="top-nav__close-m-search mob-search-btn-js">
@@ -156,7 +158,10 @@
 									<div class="search__input-wrap form-group"><input class="search__input form-control" name="text" type="text" placeholder=""/><span class="search__input-title"></span>
 									</div>
 									<!-- +e.input-wrap-->
-									<button class="search__s-btn" type="button"><img loading="lazy" src="img/svg/zoom.svg" alt=""/>
+									<button class="search__s-btn" type="button">
+										<svg class="icon icon-zoom ">
+											<use xlink:href="img/svg/sprite.svg#zoom"></use>
+										</svg>
 									</button>
 								</div>
 							</div>
@@ -165,11 +170,20 @@
 							<div class="top-nav__items-col col-auto d-none d-md-block">
 								<div class="topNavItems">
 									<div class="topNavItems__row row">
-										<div class="col-auto"><a class="topNavItems__item" href="#"><img loading="lazy" src="img/svg/bars.svg" alt=""/></a>
+										<div class="col-auto"><a class="topNavItems__item" href="#">
+											<svg class="icon icon-bars ">
+												<use xlink:href="img/svg/sprite.svg#bars"></use>
+											</svg></a>
 										</div>
-										<div class="col-auto"><a class="topNavItems__item" href="#"><img loading="lazy" src="img/svg/like.svg" alt=""/></a>
+										<div class="col-auto"><a class="topNavItems__item" href="#">
+											<svg class="icon icon-like2 ">
+												<use xlink:href="img/svg/sprite.svg#like2"></use>
+											</svg></a>
 										</div>
-										<div class="col-auto"><a class="topNavItems__item" href="#"><img loading="lazy" src="img/svg/cart.svg" alt=""/><span class="topNavItems__cart-circle"></span></a>
+										<div class="col-auto"><a class="topNavItems__item" href="#">
+											<svg class="icon icon-cart ">
+												<use xlink:href="img/svg/sprite.svg#cart"></use>
+											</svg><span class="topNavItems__cart-circle"></span></a>
 										</div>
 									</div>
 								</div>

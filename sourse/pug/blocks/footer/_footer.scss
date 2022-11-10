@@ -52,7 +52,7 @@
 			color: $gray-511;
 			a {
 				font-size: rem(20);
-				color: $warning;
+				color: var(--bs-footer-link, var(--bs-warning)) !important; 
 				padding: rem(5) 0;
 			}
 		}
@@ -65,7 +65,7 @@
 
 		color: $white;
 		&:hover{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__btn-wrap {
@@ -97,8 +97,8 @@
 		margin-bottom: rem(48);
 		--bs-btn-padding-y: #{rem(12)};
 		&:hover {
-			border-color: $primary;
-			color: $white;
+			border-color: var(--bs-primary) !important;
+			color: $white !important;
 		}
 	}
 	&__mail{
@@ -128,7 +128,7 @@
 		height: rem(32);
 		border-radius: 5px;
 		padding: rem(4);
-		background-color: $primary;
+		background-color: var(--bs-primary);
 
 		display: flex;
 		align-items: center;
@@ -198,7 +198,7 @@
 			@include mt();
 			font-size: rem(12);
 
-			stroke: $primary;
+			stroke: var(--bs-primary);
 		}
 
 		&:hover{
@@ -310,7 +310,7 @@
 
 		color: $gray-670;
 		&:hover{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 
@@ -333,7 +333,7 @@
 
 		color: $gray-520;
 		&:hover{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__cr-img{
@@ -395,7 +395,7 @@
 		&:focus, 
 		&:not(:placeholder-shown){
 			&:not(textarea) {
-				// box-shadow:  0px 3px 0px  $primary;
+				// box-shadow:  0px 3px 0px  var(--bs-primary);
 			}
 		}
 		&:-webkit-autofill ,

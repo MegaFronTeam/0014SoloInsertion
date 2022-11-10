@@ -88,7 +88,7 @@
 				line-height: calc(22/16);
 				color: $headings-color!important;
 				&:hover{
-					color: $primary!important;
+					color: var(--bs-primary)!important;
 				}
 			}
 		}

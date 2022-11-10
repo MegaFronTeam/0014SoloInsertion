@@ -512,7 +512,7 @@
 
 		background-color: transparent;
 		&:hover{
-			background-color: $primary;
+			background-color: var(--bs-primary);
 			.icon{
 				stroke: $white;
 			}

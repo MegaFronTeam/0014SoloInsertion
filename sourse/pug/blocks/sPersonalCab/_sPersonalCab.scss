@@ -130,7 +130,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
+		
+		svg,
 		img{
 			width: auto;
 			height: auto;
@@ -143,7 +144,7 @@
 		line-height: calc(36/26);
 		font-weight: 600;
 		margin-bottom: rem(8);
-		background: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+		background: var(--title-gr, linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -232,7 +233,7 @@
 			width: rem(6);
 			height: rem(10);
 
-			background-image: url(../img/svg/chevron-right-orange.svg);
+			background-image: var(--check-primary);
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -245,12 +246,16 @@
 				display: flex;
 				justify-content: flex-start;
 			}
-
-			color: $gray-511!important;
+			&:not(:hover) {
+				color: $gray-511!important;
+			}
 			font-weight: 400;
 			&:hover{
-				color: $gray-511!important;
+				color: $body-color!important;
 				border-radius: 0 0 7px 7px;
+				&::after{
+					background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.88889 17H15.1111C16.1528 17 17 16.1528 17 15.1111V1.88889C17 0.847167 16.1528 0 15.1111 0H1.88889C0.847166 0 0 0.847167 0 1.88889V7.5565H6.60922V3.77778L12.2759 8.5L6.60922 13.2222V9.44539H0V15.1111C0 16.1528 0.847166 17 1.88889 17Z' fill='#{$body-color}'/%3E%3C/svg%3E%0A");
+				}
 			}
 			&::before {
 				content: '';
@@ -268,13 +273,16 @@
 			&:after{
 				content: '';
 				display: block;
-				background-image: url('../img/svg/icon-exit.svg');
+				background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.88889 17H15.1111C16.1528 17 17 16.1528 17 15.1111V1.88889C17 0.847167 16.1528 0 15.1111 0H1.88889C0.847166 0 0 0.847167 0 1.88889V7.5565H6.60922V3.77778L12.2759 8.5L6.60922 13.2222V9.44539H0V15.1111C0 16.1528 0.847166 17 1.88889 17Z' fill='%23ABABAB'/%3E%3C/svg%3E%0A");
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center;
 				width: 21px;
 				height: 21px;
 				margin-left: rem(9);
+				@include mt;
+				position: relative;
+				top: rem(2);
 			}
 		}
 	}
@@ -383,7 +391,7 @@
 
 			color: $gray-550;
 			&:hover{
-				color: $primary;
+				color: var(--bs-primary);
 			}
 		}
 		&__btn{
@@ -392,7 +400,7 @@
 
 			// background-color: $gray-550!important;
 			// &:hover{
-			// 	background-color: $primary!important;
+			// 	background-color: var(--bs-primary)!important;
 			// }
 
 			padding: rem(21) rem(28);
@@ -415,11 +423,11 @@
 			--bs-btn-bg: #{$gray-550};
 			--bs-btn-border-color: #{$gray-550};
 			--bs-btn-hover-color: #{$white};
-			--bs-btn-hover-bg: #{$primary};
-			--bs-btn-hover-border-color: #{$primary};
+			--bs-btn-hover-bg: #{var(--bs-primary)};
+			--bs-btn-hover-border-color: #{var(--bs-primary)};
 			--bs-btn-active-color: #{$white};
-			--bs-btn-active-bg: #{$primary};
-			--bs-btn-active-border-color: #{$primary};
+			--bs-btn-active-bg: #{var(--bs-primary)};
+			--bs-btn-active-border-color: #{var(--bs-primary)};
 		}
 
 		//
@@ -539,7 +547,7 @@
 	}
 	&__add-all {
 		&:hover {
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__bonus {
@@ -617,7 +625,7 @@
 			width: rem(22);
 			height: rem(8);
 
-			background-image: url(../img/svg/chevron-down-sm.svg);
+			background-image: var(--check-down-sm);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
@@ -647,7 +655,7 @@
 		}
 		&--status{
 			//width: 25%;
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__content{

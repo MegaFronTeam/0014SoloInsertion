@@ -69,7 +69,7 @@
 			top: 70px;
 			width: rem(50);
 			height: rem(4);
-			background-color: $primary;
+			background-color: var(--bs-primary);
 		}
 	}
 	&__txt-content{
@@ -366,7 +366,7 @@
 		line-height: calccalc(26/16);
 
 		a{
-			color: $primary;
+			color: var(--bs-primary);
 
 			text-decoration: none;
 			&:hover{

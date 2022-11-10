@@ -40,7 +40,7 @@
 			display: block;
 			width: 200vw;
 			height: 1px;
-			background-color: $primary;
+			background-color: var(--bs-primary);
 			left: -100vw;
 			top: rem(37);
 			z-index: -1;
@@ -50,7 +50,7 @@
 		width: 70px;
 		height: 70px;
 		border-radius: 10px;
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		padding: 17px;
 		margin-bottom: 13px;
 	}

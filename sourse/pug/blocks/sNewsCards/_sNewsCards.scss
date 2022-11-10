@@ -24,7 +24,7 @@
 			@include a-cent(y);
 			width: 150vw;
 			height: 1px;
-			background-color: $primary;
+			background-color: var(--bs-primary);
 			left: -50vw;
 			z-index: -1;
 		}
@@ -33,7 +33,7 @@
 		position: relative;
 		width: rem(70);
 		height: rem(70);
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		border-radius: 50%;
 		img {
 			@include a-cent;
@@ -66,7 +66,7 @@
 		&__btn {
 			@include mt;
 			padding: rem(22.5) 0;
-			background-color: $primary;
+			background-color: var(--bs-primary);
 			border-radius: rem(10);
 			border: none;
 			color: #fff;
@@ -125,7 +125,7 @@
 			}
 			&:hover {
 				background-color: $gray-115;
-				// color: $orange;
+				// color: var(--bs-primary);
 			}
 			// &:not(:last-child) {
 			// 	margin-bottom: rem(10);
@@ -217,7 +217,7 @@
 		display: inline-flex;
 		align-items: center;
 		justify-content: flex-end;
-		background-color: $primary;
+		background-color: var(--bs-primary);
 		color: $white;
 		font-weight: 700;
 		padding: rem(16) rem(20) rem(16) rem(30);
@@ -267,7 +267,7 @@
 		}
 		&.active,
 		&:hover {
-			color: $primary;
+			color: var(--bs-primary);
 			.icon {
 				fill: currentColor;
 				// stroke: currentColor;

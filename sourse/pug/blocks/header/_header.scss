@@ -41,7 +41,7 @@
 }
 
 .catalog-dd {
-	border-top: 1px solid $gray-830;
+	border-top: 1px solid var(--catalog-dd-bg,#{$gray-830});
 	@include mt();
 	// transition: transform .3s;
 	transform-origin: top center;
@@ -54,7 +54,7 @@
 	padding: rem(20) 0 0;
 	position: absolute;
 	display: block;
-	background-color: $gray-830;
+	background-color: var(--catalog-dd-bg,#{$gray-830});
 
 	left: 0;
 	width: 100%;
@@ -87,7 +87,7 @@
 		align-items: center;
 		margin-bottom: rem(20);
 		font-size: rem(20);
-		color: $white;
+		color: var(--catalog-dd-color,#{$white});
 
 		.icon {
 			margin-left: rem(15);
@@ -110,14 +110,19 @@
 		// @include media-breakpoint-up(lg) {
 		// 	min-height: rem(90);
 		// }
-		background-color: $gray-830;
-		color: $white;
+		background-color: var(--catalog-dd-bg,#{$gray-830});
+		color: var(--catalog-dd-color,#{$white});
+		@include mt;
+		&:hover{
+			background-color: $gray-115;
+
+		}
 		&.active {
 			color: $body-color;
 			background-color: $gray-115;
 			.catalog-dd__txt {
 				&:before {
-					background-image: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+					background: var(--catalog-dd-border, linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
 				}
 			}
 		}
@@ -203,7 +208,7 @@
 						font-size: rem(16);
 						color: $gray-900;
 						&:hover {
-							color: $primary;
+							color: var(--bs-primary);
 						}
 					}
 				}
@@ -220,7 +225,7 @@
 				color: $body-color;
 				font-size: rem(14);
 				&:hover {
-					color: $primary;
+					color: var(--bs-primary);
 				}
 			}
 		}
@@ -254,17 +259,19 @@
 .search-dd {
 	@include mt();
 	transform-origin: top center;
-
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
 	transform: scaleY(0);
+	visibility: hidden;
 	&.active {
 		transform: scaleY(1);
+		visibility: visible;
 	}
 
 	padding: rem(20) 0;
 	position: absolute;
 	display: block;
-	background: $gray-830;
-
+	// background: $gray-830;
+	background-color: var(--top-nav-bg, #{$gray-830});
 	top: calc(100% - var(--brands-h));
 	left: 0;
 	width: 100%;
@@ -284,7 +291,7 @@
 		align-items: center;
 		margin-bottom: rem(20);
 		font-size: rem(20);
-		color: $white;
+		color: var(--catalog-dd-color,#{$white});
 
 		.icon {
 			margin-left: rem(15);
@@ -317,7 +324,7 @@
 		a {
 			font-size: rem(14);
 			margin-bottom: rem(10);
-			color: $white;
+			 color: var(--order-call-color,#fff);
 			line-height: 1.35;
 			font-weight: 600;
 
@@ -363,7 +370,7 @@
 		font-size: rem(14);
 		font-weight: 600;
 		line-height: 1.5;
-		color: $white;
+		color: var(--order-call-color,#fff);
 	}
 	&__price-col {
 		display: flex;
@@ -373,12 +380,12 @@
 		&--old {
 			font-size: rem(12);
 			text-decoration-line: line-through;
-			color: $primary;
+			color: var(--bs-primary);
 			margin-right: rem(12);
 		}
 		&--curr {
 			font-size: rem(14);
-			color: $white;
+			color: var(--order-call-color,#fff);
 			font-weight: 600;
 		}
 	}
@@ -398,7 +405,7 @@
 
 		.icon {
 			color: transparent;
-			stroke: $primary;
+			stroke: var(--bs-primary);
 		}
 	}
 	&__brands-row {

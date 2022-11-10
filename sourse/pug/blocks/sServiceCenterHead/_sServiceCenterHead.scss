@@ -53,11 +53,11 @@
 			transform: translateY(-50%);
 			background-color: transparent;
 			border: none;
+			color: var(--bs-primary-light, #{$primary});
 		}
 		.icon {
-			color: $orange;
 			fill: none;
-			stroke: $orange;
+			stroke: currentColor;
 			font-size: rem(23);
 		}
 	}
@@ -89,7 +89,7 @@
     position: relative;
 		.icon {
 			font-size: rem(6.4);
-			color: $orange;
+			color: var(--bs-primary);
 			margin-left: rem(42);
 		}
 	}
@@ -120,7 +120,7 @@
 		font-size: rem(17);
 		font-weight: 600;
 		&:hover {
-			color: $orange;
+			color: var(--bs-primary);
 		}
 		&:not(:last-child) {
 			margin-bottom: rem(10);

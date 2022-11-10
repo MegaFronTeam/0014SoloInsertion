@@ -12,7 +12,7 @@
 		margin-bottom: rem(48);
 		p {
 			text-transform: uppercase;
-			color: $orange;
+			color: var(--bs-primary);
 			font-size: rem(18);
 			margin-bottom: rem(25);
 		}
@@ -40,7 +40,7 @@
 		&.active {
 			.icon-chevron-down {
 				transform: rotate(180deg);
-				color: $orange;
+				color: var(--bs-primary);
 			}
 		}
 	}

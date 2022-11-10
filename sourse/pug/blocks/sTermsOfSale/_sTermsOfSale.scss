@@ -83,7 +83,7 @@
 		}
 		&.active {
 			.dropdown__btn {
-				color: $primary;
+				color: var(--bs-primary);
 				.icon {
 					transform: rotateX(180deg);
 				}
@@ -97,7 +97,7 @@
 			flex-wrap: nowrap;
 			cursor: pointer;
 			&:hover {
-				color: $primary;
+				color: var(--bs-primary);
 			}
 
 			h2 {

@@ -51,7 +51,7 @@
 		}
 		span {
 			&:first-of-type {
-				color: $orange;
+				color: var(--bs-primary);
 				font-weight: 600;
 				font-size: rem(144);
 				@include media-breakpoint-down(md) {

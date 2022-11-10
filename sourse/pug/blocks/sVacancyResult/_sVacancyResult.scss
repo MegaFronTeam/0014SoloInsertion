@@ -33,7 +33,7 @@
 		padding-right: rem(30);
 		.icon {
 			font-size: rem(6.4);
-			color: $orange;
+			color: var(--bs-primary);
 			margin-left: auto;
     	align-self: center;
 		}
@@ -69,7 +69,7 @@
 			margin-bottom: rem(10);
 		}
 		&:hover {
-			color: $orange;
+			color: var(--bs-primary);
 		}
 		// &:not(:last-child) {
 		// 	margin-bottom: rem(10);
@@ -96,9 +96,9 @@
 			border: none;
 		}
 		.icon {
-			color: $orange;
+			color: var(--bs-primary);
 			fill: none;
-			stroke: $orange;
+			stroke: var(--bs-primary);
 			font-size: rem(23);
 		}
 		&--noresult {

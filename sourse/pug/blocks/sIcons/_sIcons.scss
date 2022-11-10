@@ -111,8 +111,8 @@
 
 		a{
 			text-decoration: none;
+			color: var(--bs-blue) !important;
 			&:not(:hover) {
-				color: #6CBB10;
 			}
 		}
 

@@ -4,6 +4,7 @@ $output-bourbon-deprecation-warnings: false;
 @import "bourbon/app/assets/stylesheets/bourbon";
 // @import "../../node_modules/rfs/scss";
 
+
 @import "mixin";
 @import "fonts";
 @import "_sprite";
@@ -102,5 +103,5 @@ $output-bourbon-deprecation-warnings: false;
 @import "base";
 @import '../pug/blocks/**/*.scss';
 @import "media"; // Всегда в конце
-@import 'custom.scss';
-
+@import 'custom';
+@import "theme";

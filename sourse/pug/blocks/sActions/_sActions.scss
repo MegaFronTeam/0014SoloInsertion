@@ -67,8 +67,8 @@
 		}
 
 		min-height: rem(330);
-		display: flex;
-		align-items: stretch;
+		//display: flex;
+		//align-items: stretch;
 		&:hover {
 			img {
 				transform: scale(1.1);
@@ -77,9 +77,10 @@
 		img {
 			@include mt;
 			// position: absolute;
-			max-width: rem(665);
-			height: auto;
+			max-width: 100%;
+			//height: 100%;
 			// right: 0;
+			height: auto;
 			// bottom: 0;
 			z-index: -1;
 		}
@@ -144,7 +145,7 @@
 		--bs-btn-border-width: 0;
 		--bs-btn-hover-bg: transparent;
 		--bs-btn-active-bg: transparent;
-		--bs-btn-hover-color: #{$primary};
+		--bs-btn-hover-color: var(--bs-primary);
 		position: relative;
 		padding-right: rem(48);
 		&::after {

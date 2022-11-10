@@ -39,7 +39,7 @@
 			position: relative;
 			&::before{
 					content: '';
-					background: $primary;
+					background: var(--bs-primary);
 					width: 40px;
 					height: 4px;
 					position: absolute;

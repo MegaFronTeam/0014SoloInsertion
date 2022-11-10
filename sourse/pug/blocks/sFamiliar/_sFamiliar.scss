@@ -59,7 +59,7 @@
       border: 1px solid rgba(255, 255, 255, 0.25) !important;
 
       &:hover {
-        border: $primary !important;
+        border: var(--bs-primary) !important;
       }
     }
     border-bottom: 1px solid rgba($white, .1);
@@ -170,7 +170,7 @@
 				display: block;
 				width: rem(17);
 				height: rem(17);
-				background-image: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+				background: var(--title-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 				transform: translateY(-50%) rotate(-45deg);
 				top: 50%;
 				left: rem(-32);
@@ -236,10 +236,15 @@
     display: flex;
     align-items: center;
     background-color: #F4F4F4;
+    // background-color: inherit;
     //@include media-breakpoint-up(xxl){
     //	position: relative;
     //	top: -15px;
     //}
+  }
+  &.dark-bg .section-title h2,
+  &.dark-bg &__arrow-col{
+    @extend .dark-bg;
   }
 
   .swiper-prev,
@@ -368,7 +373,7 @@
       display: block;
       width: 100%;
       height: 12px;
-      background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+      background: var(--line-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
       opacity: .5;
       left: 0;
       top: 0;
@@ -390,7 +395,7 @@
   &:hover {
     --op: 1;
     // overflow: visible;
-    box-shadow: none;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
     img {
       // opacity: 0;
     }
@@ -491,9 +496,9 @@
     height: rem(36);
     border-radius: 50%;
 
-    background-color: $primary;
+    background-color: var(--bs-primary);
     &:hover{
-      background-color: $primary;
+      background-color: var(--bs-primary);
     }
 
     img:first-child{
@@ -503,7 +508,7 @@
       opacity: 0;
     }
     &.active{
-      background-color: $primary!important;
+      background-color: var(--bs-primary)!important;
       img:first-child{
         opacity: 0;
       }
@@ -585,7 +590,7 @@
 					top: 0;
 					width: 100%;
 					height: 100% !important;
-					background-color: $primary;
+					background-color: var(--bs-primary);
 				}
 
 				&-active{
@@ -801,7 +806,7 @@
         right: 100%;
         width: 3px;
         height: 100%;
-        background-color: var(--bar-bg, #{$primary});
+        background-color: var(--bar-bg, #{var(--bs-primary)});
       }
     }
   }

@@ -65,12 +65,14 @@ mixin topNavSearch(addClasses)
 	+b.search(class=addClasses)
 		+input('', 'text')
 		+e.s-btn(type="button")
-			img(loading="lazy" src="img/svg/zoom.svg" alt="")
+			+icon("zoom")
+			//- img(loading="lazy" src="img/svg/zoom.svg" alt="")
 
 mixin topNavItem(iconName)
 	.col-auto
 		+e.item(href="#")
-			img(loading="lazy" src=`img/svg/${iconName}.svg` alt="")
+			+icon(`${iconName}`)
+			//- img(loading="lazy" src=`img/svg/${iconName}.svg` alt="")
 			//-+icon()
 			block
 
@@ -107,7 +109,7 @@ mixin topNavItems()
 	+b.topNavItems
 		+e.row.row
 			+topNavItem('bars')
-			+topNavItem('like')
+			+topNavItem('like2')
 			+topNavItem('cart')
 				+e.cart-circle
 

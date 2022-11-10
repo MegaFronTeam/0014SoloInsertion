@@ -46,7 +46,7 @@
 	}
 	&__subtitle {
 		text-transform: uppercase;
-		color: $orange;
+		color: var(--bs-primary);
 		font-size: rem(16);
 		@include media-breakpoint-up(md) {
 			font-size: rem(18);

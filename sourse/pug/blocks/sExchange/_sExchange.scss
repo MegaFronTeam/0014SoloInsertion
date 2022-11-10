@@ -45,7 +45,7 @@
 			margin-bottom: rem(30);
 		}
 		blockquote{
-			border-left: 6px solid $primary;
+			border-left: 6px solid var(--bs-primary);
 			padding: rem(7) 0 rem(11) rem(23);
 			margin-bottom: rem(30);
 
@@ -61,4 +61,8 @@
 	//
 	&__{}
 	&__{}
+
+	ul{
+		padding-left: 20px;
+	}
 } // end.sExchange

@@ -12,7 +12,7 @@
 			color: $gray-520;
 		}
 		p {
-			color: $primary;
+			color: var(--bs-primary);
 			font-size: 1.125rem;
 			margin-bottom: rem(24);
 			text-transform: uppercase;

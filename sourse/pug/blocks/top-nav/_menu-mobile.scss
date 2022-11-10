@@ -4,7 +4,7 @@ $h: em(2);
 	display: block;
 	height: $h* 12;
 	position: relative;
-	color: $primary;
+	color: var(--bs-primary);
 	font-size: 32px;
 	width: 1em;
 	cursor: pointer;
@@ -192,7 +192,7 @@ $h: em(2);
 		font-size: rem(19);
 		line-height: calc(30/19);
 
-		color: $primary;
+		color: var(--bs-primary);
 		&:hover{
 			color: $white;
 		}

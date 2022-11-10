@@ -16,7 +16,7 @@
 		display: block;
 		width: 100%;
 		height: 12px;
-		background-image: linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%);
+		background: var(--line-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 		opacity: .5;
 		top: 0;
 		left: 0;
@@ -61,7 +61,7 @@
 				display: block;
 				width: rem(17);
 				height: rem(17);
-				background-image: linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%);
+				background: var(--title-gr, linear-gradient(90deg, #51A80E 0%, #0A9D62 29.69%, #CFC95C 59.9%, #E29525 100%));
 				transform: translateY(-50%) rotate(-45deg);
 				top: 50%;
 				left: rem(-32);
@@ -155,7 +155,7 @@
 		text-align: center;
 		@include mt();
 		&:hover{
-			color: $primary;
+			color: var(--bs-primary);
 		}
 	}
 	&__descr{

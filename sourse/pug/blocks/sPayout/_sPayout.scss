@@ -67,7 +67,7 @@
 	}
 	p {
 		text-transform: uppercase;
-		color: $orange;
+		color: var(--bs-primary);
 		margin-bottom: 0;
 		font-size: rem(18);
 	}
