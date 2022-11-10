@@ -395,8 +395,8 @@
 			}
 
 			&:not(.active){
-				--bs-btn-bg: #{$gray-280};
-				--bs-btn-border-color: #{$gray-280};
+				--bs-btn-bg: #{$gray-280} !important;
+				--bs-btn-border-color: #{$gray-280} !important;
 				color: $body-color!important;
 				&:hover{
 					background-color: var(--bs-primary)!important;

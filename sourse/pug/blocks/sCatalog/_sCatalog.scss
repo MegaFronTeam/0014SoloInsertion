@@ -1241,7 +1241,7 @@
 			}
 		}
 		&.active {
-			background: var(--line-gr,  linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
+			background: var(--bs-btn-order-bg,  linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
 			img {
 				&:nth-child(1) {
 					display: none;
