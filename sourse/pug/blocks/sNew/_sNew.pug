@@ -62,8 +62,8 @@ mixin sNewProdItem(addClasses='', imgMod='', imgAmount=1)
 							+e.n-cart-btn.cart-btn-js(href="#")
 								img(loading="lazy" src="img/svg/n-cart.svg" alt="")
 								img(loading="lazy" src="img/svg/n-cart-done.svg" alt="")
-						+nAction(1, 'Добавить в избранное', 'В избранном')
-						+nAction(2, 'Добавить в сравнение', 'В сравнение')
+						+nAction('compare', 'Добавить в избранное', 'В избранном')
+						+nAction('favorite', 'Добавить в сравнение', 'В сравнение')
 
 mixin sNewProdItemSlide(imgNum)
 	.swiper-slide
