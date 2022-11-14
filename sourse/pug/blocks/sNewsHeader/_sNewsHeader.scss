@@ -63,7 +63,7 @@
 		}
 		&:hover {
 			h3 {
-				color: var(--bs-primary);
+				color: var(--bs-primary-light-hover, var(--bs-primary-hover));
 			}
 		}
 		&:nth-child(1) {
@@ -118,6 +118,7 @@
 			font-weight: 600;
 			color: $white;
 			margin-bottom: 0;
+			font-size: rem(20);
 			.icon {
 				// fill: none;
 				// stroke: var(--bs-primary);

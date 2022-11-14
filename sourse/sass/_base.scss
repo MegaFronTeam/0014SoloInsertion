@@ -724,7 +724,20 @@ iframe {
 
 		a,span{
 			@extend .btn;
-			@extend .btn-primary;
+			--bs-btn-color: ##fff;
+			--bs-btn-bg: var(--bs-primary);
+			--bs-btn-border-color: var(--bs-primary);
+			--bs-btn-hover-color: ##fff;
+			--bs-btn-hover-bg: var(--bs-primary-hover);
+			--bs-btn-hover-border-color: var(--bs-primary-hover);
+			--bs-btn-focus-shadow-rgb: none;
+			--bs-btn-active-color: ##fff;
+			--bs-btn-active-bg: var(--bs-primary-active);
+			--bs-btn-active-border-color: var(--bs-primary-active);
+			--bs-btn-active-shadow: none;
+			--bs-btn-disabled-color: ##fff;
+			--bs-btn-disabled-bg: var(--bs-primary);
+			--bs-btn-disabled-border-color: var(--bs-primary);
 
 			min-width: rem(30);
 			height: rem(30);

@@ -8,17 +8,22 @@
 .theme-miele{ 
 	$primary: #850013;
 	$primary-light: #F45C5C;
+	$primary-light-hover: #f87e7e;
 	$primary-hover: #b4011c;
+
 
 	--bs-primary: #{$primary};
 	--bs-primary-light: #{$primary-light};
+	--bs-primary-light-hover: #{$primary-light-hover};
 	--bs-primary-hover: #{$primary-hover};
 	--bs-primary-active: #670000;
+
 	--bs-primary-rgb: 133 0 19;
 	--dark: #444444;
 	--light: #F4F4F4 ;
 	--text-light: #ABABAB ;
 	--bs-warning: var(--bs-primary);
+	--bs-link-color: var(--bs-primary);
 	--bs-link-color: var(--bs-primary);
 	--bs-link-hover-color: var(--bs-primary-hover);
 	
@@ -32,16 +37,21 @@
 	--tni-color: #ABABAB;
 	--brand-link-color: var(--dark);
 	--brand-arrow-color: var(--text-light);
+	--link-dark-color:  var(--bs-primary-light);
 	--all-link-color: var(--text-light);
+	--all-link-color-hover: var(--bs-primary);
 	--catalog-dd-border: var(--bs-primary);
 		--line-gr: linear-gradient(90deg, #9F9F9F 0%, #8A8A8A 29.69%, #AB4040 59.9%, #8F1E1E 100%);
 		--title-gr: linear-gradient(90deg, #670000 0%, #C22424 100%); 
+		--title-gr-light: linear-gradient(90deg, var(--bs-primary-light) 0%, #ca4d4d 100%); 
 		--catalog-dd-bg:  var(--light);
 		--catalog-dd-color: var(--dark);
 		--bs-footer-link: #fff;
 		--bs-btn-color: #fff;
 		--bs-btn-order: var(--bs-primary);
 		--bs-btn-order-bg: linear-gradient(90deg, #670000 0%, #C22424 100%);
+
+		--green-text: #FFFFFF;
 		
 		.top-nav__tel{
 			--bs-link-color: var(--bs-primary);
@@ -60,14 +70,25 @@
 
 		--check-down-sm: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5' fill='none'%3E%3Cpath d='M7 1L4 4L1 0.999999' stroke='#{$primary}' stroke-linecap='square'/%3E%3C/svg%3E");
 
+		--icon-plus: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect width='16' height='16' rx='3' fill='#{$primary}'/%3E%3Cpath d='M8 4V12M4 8H12' stroke='white' stroke-linecap='round'/%3E%3C/svg%3E");
+
 		.pagination-wrapper ul a, .pagination-wrapper ul span{
-			color: #fff!important;
+			// color: #fff!important;
 		}
 
 		[fill="#4C9900"]{
 			fill: var(--bs-primary) !important;
-
 		}
+		.sDeliveryWays__h-icon.pathStroke svg [fill="#4C9900"] {
+			fill: var(--h-col,#9b9b9b)!important;
+		}
+		.sPersonalCab__img{
+			
+			[fill="#4C9900"]{
+				fill: var(--bs-primary-light) !important;
+			}
+	}
+
 		.btn-primary{
 			--bs-btn-color: ##fff;
 			--bs-btn-bg: var(--bs-primary);
@@ -109,4 +130,15 @@
 			fill: #DCDCDC !important;
 		}
 	}
+
+	.reviews { 
+		&__stars { 
+			.icon { 
+				color: lighten( $primary,  50%); 
+				&.active {
+					color: var(--bs-primary);
+				}
+			}
+		}
+		}
 }

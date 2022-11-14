@@ -266,7 +266,11 @@
 		color: #fff;
 		max-width: rem(310);
 		a{
-			color: var(--bs-primary);
+			color: var(--bs-primary-light, var(--bs-primary));
+			&:hover{
+				color: var(--bs-primary-light-hover, var(--bs-primary-hover));
+
+			}
 			text-decoration: none;
 		}
 	}

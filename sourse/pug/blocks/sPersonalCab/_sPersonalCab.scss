@@ -144,7 +144,7 @@
 		line-height: calc(36/26);
 		font-weight: 600;
 		margin-bottom: rem(8);
-		background: var(--title-gr, linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
+		background: var(--title-gr-light, linear-gradient(90deg, #6CBB10 0%, #C9DE5E 100%));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
@@ -542,7 +542,7 @@
 	}
 	&__clear {
 		&:hover {
-			color: $red;
+			color: var(--bs-primary-hover, #{$red});
 		}
 	}
 	&__add-all {
@@ -596,12 +596,12 @@
 		@include media-breakpoint-up(xxl){
 			--item-px: #{rem(50)};
 		}
-	}
-	&__head{
-		cursor: pointer;
 		&.active{
 			--chevron-rot-x: 180deg;
 		}
+	}
+	&__head{
+		cursor: pointer;
 
 		position: relative;
 		z-index: 2;

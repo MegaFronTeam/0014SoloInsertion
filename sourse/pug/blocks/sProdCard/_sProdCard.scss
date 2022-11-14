@@ -696,7 +696,7 @@
 	}
 	&__b-val{
 		line-height: calc(27/16);
-		color: #82DF27;
+		color: var(--green-text, #82df27);
 	}
 	&__b-txt{
 		font-size: 16px;
@@ -792,7 +792,7 @@
 		font-size: rem(14);
 		line-height: calc(19/14);
 		text-decoration: none;
-		color: #82DF27;
+		color: var(--green-text, #82df27);
 	}
 	//
 	&__pills{

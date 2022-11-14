@@ -339,7 +339,7 @@
 		line-height: calc(28/16);
 		color: var(--brand-link-color, #fff);
 		&:hover {
-			color: $yellow;
+			color: var(--all-link-color-hover,#{$yellow});
 		}
 	}
 
@@ -385,7 +385,7 @@
 
 		color: var(--all-link-color,#{$gray-110});
 		&:hover{
-			color: $yellow;
+			color: var(--all-link-color-hover,#{$yellow});
 		}
 
 	}

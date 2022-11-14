@@ -134,14 +134,14 @@ mixin sPersonalCab(data)
 	// end sPersonalCab
 
 mixin sPersonalCabOrder(data)
-	+e.item
-		+e.head.free-dd-head-js(class=data.activeClasses)
+	+e.item(class=data.activeClasses)
+		+e.head.free-dd-head-js
 			+e.h-row.row
 				+e.col--number.col-6.col-xl Заказ №31662
 				+e.col--date.col-6.col-xl 22.11.2020
 				+e.col--price.col-6.col-xl 13 776 руб.
 				+e.col--status.col-6.col-xl=data.status
-		+e.content.free-dd-content-js(class=data.activeClasses)
+		+e.content.free-dd-content-js
 			+e.c-row.row.gy-3
 				+e.c-col--long.col-xl
 					+e.d-title Информация о заказе
